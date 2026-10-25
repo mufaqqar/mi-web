@@ -29,7 +29,9 @@ const personSchema = {
   "email": "info@mufaqar.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "134 B Ahmed Housing Multan Lahore",
+    "streetAddress": "134 B Ahmed Housing, Multan Road",
+    "addressLocality": "Lahore",
+    "addressRegion": "Punjab",
     "addressCountry": "PK"
   },
   "sameAs": [
@@ -52,12 +54,20 @@ const serviceSchema = {
   "email": "info@mufaqar.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "134 B Ahmed Housing Multan Lahore",
+    "streetAddress": "134 B Ahmed Housing, Multan Road",
+    "addressLocality": "Lahore",
+    "addressRegion": "Punjab",
     "addressCountry": "PK"
   },
   "areaServed": ["PK", "Worldwide"],
   "priceRange": "$$",
   "founder": { "@id": `${SITE_URL}/#person` },
+  "sameAs": [
+    "https://www.facebook.com/mufaqar",
+    "https://www.linkedin.com/in/mufaqar",
+    "https://twitter.com/mufaqar",
+    "https://github.com/mufaqar"
+  ],
   "description": "Full stack web developer specialising in WordPress, React, Next.js and PHP. Services include full stack development, WordPress development, e-commerce and website maintenance.",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",

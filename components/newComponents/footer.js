@@ -34,7 +34,7 @@ const Footer = () => {
       </div> */}
       <div className="container mx-auto px-4 grid md:grid-cols-3 grid-cols-1 gap-5 mt-16">
         <div>
-          <h2 className="text-2xl font-semibold text-white mb-4">Contact</h2>
+          <h3 className="text-2xl font-semibold text-white mb-4">Contact</h3>
           <ul className="flex flex-col gap-2">
             <li>
               <Link
@@ -114,15 +114,15 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold text-white mb-4">Address</h2>
+          <h3 className="text-2xl font-semibold text-white mb-4">Address</h3>
           <p className="text-base font-normal text-white md:w-48">
-            134 B Ahmed Housing Multan Lahore , Pakistan
+            134 B Ahmed Housing, Multan Road, Lahore, Pakistan
           </p>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold text-white mb-4">
+          <h3 className="text-2xl font-semibold text-white mb-4">
             Quick Links
-          </h2>
+          </h3>
           <ul className="flex flex-col gap-2">
             <li>
               <Link
@@ -150,7 +150,7 @@ const Footer = () => {
             </li>
           </ul>
           <p className="text-base font-normal text-white mt-2">
-            © 2010 - 2026 All Rights Reserved
+            Â© 2010 - 2026 All Rights Reserved
           </p>
         </div>
       </div>

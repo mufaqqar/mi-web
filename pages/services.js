@@ -3,14 +3,59 @@ import Service from '../components/service-box'
 import PageHead from '../components/pagesmeta'
 import Testimonial from '../components/newComponents/testimonial'
 import CTA from '../components/newComponents/cta'
+import { breadcrumbSchema, serviceSchema } from '../const/schema'
+
+const servicesSchema = [
+  breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+  ]),
+  serviceSchema({
+    name: 'WordPress Development',
+    serviceType: 'WordPress development',
+    description: 'Custom WordPress themes, plugins, WooCommerce stores and maintenance.',
+    url: '/services',
+  }),
+  serviceSchema({
+    name: 'React & Next.js Development',
+    serviceType: 'React and Next.js development',
+    description: 'Scalable web applications built with React, Next.js, TypeScript and Tailwind CSS.',
+    url: '/services',
+  }),
+  serviceSchema({
+    name: 'PHP Development',
+    serviceType: 'PHP development',
+    description: 'Core PHP, CodeIgniter and Laravel web applications, APIs and CMS customisation.',
+    url: '/services',
+  }),
+  serviceSchema({
+    name: 'E-commerce Development',
+    serviceType: 'E-commerce development',
+    description: 'WooCommerce and Shopify stores, integrations and ongoing store management.',
+    url: '/services',
+  }),
+  serviceSchema({
+    name: 'SEO',
+    serviceType: 'Search engine optimisation',
+    description: 'Technical, on-page and off-page SEO for WordPress, React and Next.js websites.',
+    url: '/services',
+  }),
+  serviceSchema({
+    name: 'Digital Marketing & Automation',
+    serviceType: 'Digital marketing automation',
+    description: 'Google Ads, Facebook Ads, UGS, AGS and marketing automation workflows.',
+    url: '/services',
+  }),
+]
 
 export default function Services() {
   return (
     <>
       <PageHead
-        title="Web Development & Digital Marketing Services | WordPress, React, SEO, Ads & Automation"
-        description="Expert WordPress, React, Next.js, PHP development plus SEO, Google & Facebook Ads, UGS, AGS, and marketing automation. Full-service digital solutions to grow your business."
+        title="Web Development Services | WordPress, React & Next.js"
+        description="Custom WordPress, React and Next.js development, WooCommerce stores and maintenance plans. One senior developer, fixed scope, clear timeline."
         url="https://www.mufaqar.com/services"
+        schema={servicesSchema}
       />
       <InnerPages_Banner subtitle="THIS IS WHAT I LOVE TO DO." title="WHAT I OFFER" />
 

@@ -5,6 +5,7 @@ import CTA from '../../components/newComponents/cta';
 import { Categories } from '../../const/works.jsx'
 import InnerPages_Banner from '../../components/innerPages-banner.js';
 import PageHead from '../../components/pagesmeta';
+import { breadcrumbSchema, SITE_URL } from '../../const/schema';
 
 export default function Works() {
   // State to keep track of the selected category
@@ -14,6 +15,24 @@ export default function Works() {
   const allWorks = Categories.flatMap((category) =>
     category.works.map((work) => ({ ...work, categoryId: category.id, category: category.category, }))
   );
+
+  const worksSchema = [
+    breadcrumbSchema([
+      { name: 'Home', url: '/' },
+      { name: 'Work', url: '/works' },
+    ]),
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: 'Portfolio of Mufaqar Islam',
+      itemListElement: allWorks.map((work, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: work.title,
+        url: `${SITE_URL}/works/${work.slug}`,
+      })),
+    },
+  ];
 
   // Find works of the selected category
   const selectedWorks =
@@ -28,9 +47,10 @@ export default function Works() {
   return (
     <main className='overflow-x-hidden'>
       <PageHead
-        title="Portfolio - Mufaqar Islam | Web Development Projects | WordPress, React & Next.js"
-        description="Explore the portfolio of Mufaqar Islam featuring WordPress, React, Next.js, PHP, and e-commerce projects. From custom themes to full-stack applications, see live work samples."
+        title="Portfolio | WordPress, React & Next.js Projects"
+        description="Live case studies: POS platforms, e-commerce stores and Next.js web apps built and maintained by Mufaqar Islam. See the stack, scope and results."
         url="https://www.mufaqar.com/works"
+        schema={worksSchema}
       />
       <InnerPages_Banner
         title="Work"

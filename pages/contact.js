@@ -15,6 +15,24 @@ import { FaFacebookSquare, FaGithubSquare, FaLinkedin, FaSkype, FaTwitterSquare 
 import CTA from '../components/newComponents/cta';
 import Image from 'next/image';
 import Thankyou_Popup from '../components/newComponents/thankyou-popup';
+import { breadcrumbSchema, SITE_URL } from '../const/schema';
+
+const contactSchema = [
+  breadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Contact', url: '/contact' },
+  ]),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Contact Mufaqar Islam',
+    url: `${SITE_URL}/contact`,
+    description:
+      'Contact Mufaqar Islam for WordPress, React and Next.js development projects.',
+    mainEntity: { '@id': `${SITE_URL}/#professional-service` },
+    inLanguage: 'en-US',
+  },
+];
 
 export default function Contact_Us() {
   const [popUp, setPopUp] = useState(false);
@@ -48,14 +66,15 @@ export default function Contact_Us() {
   return (
     <>
       <PageHead
-        title="Contact Mufaqar Islam | Hire Full Stack Web Developer | WordPress & React Expert"
-        description="Hire a dedicated full stack web developer. Contact Mufaqar Islam for WordPress, React, Next.js, PHP, SEO, and digital marketing solutions based in Lahore, Pakistan."
+        title="Contact Mufaqar Islam | Full Stack Web Developer"
+        description="Tell me about your project. Get a clear scope, timeline and price from a senior WordPress, React and Next.js developer within 24 hours."
         url="https://www.mufaqar.com/contact"
+        schema={contactSchema}
       />
       <main className='overflow-x-hidden relative'>
         <InnerPages_Banner
           title="LET’S WORK TOGETHER"
-          subtitle="I’d love to plan, design & develop your websit" />
+          subtitle="I’d love to plan, design & develop your website." />
         <section className='bg-title_color md:py-[12.5rem] py-20 relative'>
           <div className='container mx-auto px-4 relative'>
             <div className='flex md:flex-row flex-col md:gap-10 gap-5 items-start'>
@@ -76,32 +95,37 @@ export default function Contact_Us() {
                   Address
                 </h3>
                 <p className='text-2xl font-normal text-white'>
-                  134 B Ahmed Housing Multan Lahore , Pakistan
+                  134 B Ahmed Housing, Multan Road, Lahore, Pakistan
                 </p>
                 <ul className='flex flex-wrap gap-4 mt-8'>
                   <li>
                     <Link href="https://www.facebook.com/mufaqar" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
                       <FaFacebookSquare />
+                      <span className='sr-only'>Mufaqar Islam on Facebook</span>
                     </Link>
                   </li>
                   <li>
                     <Link href="https://www.linkedin.com/in/mufaqar" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
                       <FaLinkedin />
+                      <span className='sr-only'>Mufaqar Islam on LinkedIn</span>
                     </Link>
                   </li>
                   <li>
                     <Link href="https://twitter.com/mufaqar" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
                       <FaTwitterSquare />
+                      <span className='sr-only'>Mufaqar Islam on Twitter</span>
                     </Link>
                   </li>
                   <li>
                     <Link href="http://github.com/mufaqar" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
                       <FaGithubSquare />
+                      <span className='sr-only'>Mufaqar Islam on GitHub</span>
                     </Link>
                   </li>
                   <li>
                     <Link href="https://join.skype.com/invite/M0ilv0J1egAb" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
                       <FaSkype />
+                      <span className='sr-only'>Mufaqar Islam on Skype</span>
                     </Link>
                   </li>
                 </ul>
@@ -203,3 +227,4 @@ export default function Contact_Us() {
     </>
   );
 }
+

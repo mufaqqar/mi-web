@@ -9,7 +9,7 @@ const Testimonial = () => {
                     What Clients Say
                 </h2>
                 <div className='flex flex-row md:gap-10 gap-5 items-start max-w-[880px] mx-auto '>
-                    <Image src="/images/svgs/qout.svg" alt='' aria-hidden='true' width={123} height={98} className='-mt-10 md:w-full w-[70px]' />
+                    <Image src="/images/svgs/qout.svg" alt='' aria-hidden='true' width={123} height={98} sizes='123px' className='-mt-10 md:w-full w-[70px]' />
                     <figure className='md:mb-28 mb-10'>
                         <blockquote className='md:text-2xl text-xl font-normal italic text-white mb-9'>
                             I’ve been working with Mufaqar since 2015, and the experience has been exceptional. He is incredibly responsive, which is crucial when your business depends on your website, yet he was equally patient with us as our requirements evolved. I highly recommend Mufaqar to anyone looking to elevate their website and have a trustworthy professional manage it.

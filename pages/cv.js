@@ -10,14 +10,31 @@ import Profile_Pic from "../public/images/Profile.jpg";
 import { motion, Variant } from "framer-motion";
 import { fadeUp, scaleUp } from "../const/animation";
 import PageHead from "../components/pagesmeta";
+import { breadcrumbSchema, SITE_URL } from "../const/schema";
+
+const cvSchema = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Resume", url: "/cv" },
+  ]),
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    name: "Resume of Mufaqar Islam",
+    url: `${SITE_URL}/cv`,
+    mainEntity: { "@id": `${SITE_URL}/#person` },
+    inLanguage: "en-US",
+  },
+];
 
 export default function CV() {
   return (
     <>
       <PageHead
-        title="Resume - Mufaqar Islam | Full Stack Web Developer | 10+ Years Experience"
+        title="Resume | Mufaqar Islam — Full Stack Developer"
         description="View the resume of Mufaqar Islam — a seasoned Full Stack Web Developer with 10+ years of experience in WordPress, React, Next.js, PHP, and TailwindCSS. Available for hire."
         url="https://www.mufaqar.com/cv"
+        schema={cvSchema}
       />
       <motion.section
         initial={"offscreen"}

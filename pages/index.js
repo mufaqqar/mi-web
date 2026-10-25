@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import Head from 'next/head';
 import Workbox from '../components/newComponents/workbox';
 import Testimonial from '../components/newComponents/testimonial';
 import CTA from '../components/newComponents/cta';
 import { Categories } from '../const/works';
+import { SITE_URL, serviceSchema } from '../const/schema';
 import PageHead from '../components/pagesmeta';
 
 const faqs = [
@@ -69,27 +69,64 @@ export default function home2() {
     })),
   };
 
+  const reviewSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    itemReviewed: { '@id': `${SITE_URL}/#professional-service` },
+    author: { '@type': 'Person', name: 'Nikola, NSigma' },
+    reviewBody:
+      'I’ve been working with Mufaqar since 2015, and the experience has been exceptional. He is incredibly responsive, which is crucial when your business depends on your website, yet he was equally patient with us as our requirements evolved. I highly recommend Mufaqar to anyone looking to elevate their website and have a trustworthy professional manage it.',
+  };
+
+  const servicesSchema = [
+    serviceSchema({
+      name: 'Full Stack Web Development',
+      serviceType: 'Full stack web development',
+      description:
+        'Front-end, back-end, database, API and DevOps delivery for websites and web applications.',
+      url: '/services',
+    }),
+    serviceSchema({
+      name: 'WordPress Development',
+      serviceType: 'WordPress development',
+      description:
+        'Custom WordPress themes, plugins and WooCommerce e-commerce stores.',
+      url: '/services',
+    }),
+    serviceSchema({
+      name: 'React & Next.js Application Development',
+      serviceType: 'React and Next.js development',
+      description:
+        'Modern front-end and full-stack applications built with React, Next.js and Tailwind CSS.',
+      url: '/services',
+    }),
+    serviceSchema({
+      name: 'Website Maintenance & Support',
+      serviceType: 'Website maintenance and support',
+      description:
+        'Updates, security, backups and managed hosting for WordPress and React or Next.js sites.',
+      url: '/services',
+    }),
+  ];
+
   return (
     <>
       <PageHead
-        title="Mufaqar Islam | Full Stack Web Developer, WordPress & React"
-        description="Full stack web developer with 10+ years building fast, secure WordPress, React and Next.js websites and web apps. Let's talk about your project."
+        title="Mufaqar Islam — WordPress, React & Next.js Developer"
+        description="Full stack web developer with 10+ years building fast, secure WordPress, React and Next.js sites. See live work and get a fixed-scope quote."
         url="https://www.mufaqar.com"
+        schema={[faqSchema, reviewSchema, ...servicesSchema]}
       />
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-      </Head>
       <main className="overflow-x-hidden">
         <section className="relative">
           <div className="container mx-auto px-4 flex md:flex-row flex-col gap-6 items-center">
             <div className="md:w-1/2 w-full">
               <h1 className="md:text-6xl md:leading-[1] text-4xl font-bold text-[#1F2B37] mb-4">
-                Mufaqar Islam — Full Stack Web Developer for WordPress, React
-                &amp; Next.js
+                Mufaqar Islam — Full Stack Web Developer
               </h1>
+              <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#1F2B37] mb-4">
+                WordPress &middot; React &middot; Next.js &middot; PHP
+              </p>
               <p className="md:text-2xl text-lg font-normal text-[#212121] mb-3">
                 I design, build, launch and maintain websites and web apps for
                 organizations that depend on them.
@@ -103,19 +140,33 @@ export default function home2() {
                   href="/contact"
                   className="text-sm font-normal text-white bg-[#36CCDA] hover:bg-bs_link_color hover:border-bs_link_color py-[0.688rem] px-[1.813rem] border-2 border-[#36CCDA] inline-block transition-all duration-300"
                 >
-                  START A PROJECT
+                  GET A PROJECT QUOTE
                 </Link>
                 <Link
                   href="/works"
                   className="text-sm font-normal text-[#1F2B37] hover:text-white hover:bg-[#1F2B37] py-[0.688rem] px-[1.813rem] border-2 border-[#1F2B37] inline-block transition-all duration-300"
                 >
-                  VIEW MY WORK
+                  SEE LIVE PROJECTS
                 </Link>
               </div>
-              <p className="text-sm font-normal text-[#212121] mb-8">
-                10+ years of experience &middot; WordPress, React, Next.js
-                &amp; PHP &middot; Direct contact with your developer
-              </p>
+              <dl className="grid grid-cols-2 gap-x-6 gap-y-3 text-sm font-normal text-[#212121] mb-8">
+                <div>
+                  <dt className="font-semibold">Experience</dt>
+                  <dd>10+ years in production</dd>
+                </div>
+                <div>
+                  <dt className="font-semibold">Stack</dt>
+                  <dd>WordPress, React, Next.js &amp; PHP</dd>
+                </div>
+                <div>
+                  <dt className="font-semibold">Based in</dt>
+                  <dd>Lahore, Pakistan — working worldwide</dd>
+                </div>
+                <div>
+                  <dt className="font-semibold">Response time</dt>
+                  <dd>Within 24 hours</dd>
+                </div>
+              </dl>
             </div>
             <div className="md:w-1/2 w-full">
               <Image
@@ -134,7 +185,6 @@ export default function home2() {
             aria-hidden="true"
             width={426}
             height={286}
-            priority
             className="absolute 2xl:left-0 lg:left-[-131px] left-0 lg:bottom-[-150px] bottom-[-75px] md:w-auto w-1/2 z-10"
           />
         </section>
@@ -183,6 +233,7 @@ export default function home2() {
                 alt="Full stack development services covering Next.js, Tailwind CSS and API integrations"
                 width={1000}
                 height={667}
+                sizes="(max-width: 768px) 100vw, 45vw"
                 className="md:ml-auto md:mr-0"
               />
             </div>
@@ -233,6 +284,7 @@ export default function home2() {
                 alt="WordPress development services with custom themes, plugins and e-commerce"
                 width={886}
                 height={746}
+                sizes="(max-width: 768px) 100vw, 45vw"
                 className="md:ml-auto"
               />
             </div>
@@ -291,6 +343,7 @@ export default function home2() {
                 alt="Website maintenance, support and hosting services for WordPress and React apps"
                 width={993}
                 height={669}
+                sizes="(max-width: 768px) 100vw, 45vw"
                 className="md:ml-auto"
               />
             </div>

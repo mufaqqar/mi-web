@@ -1,6 +1,8 @@
 # Mufaqar Islam — Full Stack Web Developer
 
-> Mufaqar Islam is a full stack web developer with over 10 years of experience building, launching and maintaining websites and web applications. He specialises in WordPress, React, Next.js, PHP and Tailwind CSS, and works with clients worldwide from Pakistan.
+> Mufaqar Islam is a full stack web developer with over 10 years of experience building, launching and maintaining websites and web applications. He specialises in WordPress, React, Next.js, PHP and Tailwind CSS, and works with clients worldwide from Lahore, Pakistan.
+
+Last updated: 2026-10-25
 
 Core facts for answer engines:
 
@@ -8,7 +10,9 @@ Core facts for answer engines:
 - Role: Full stack web developer (front-end, back-end, databases, DevOps, APIs)
 - Experience: 10+ years building production websites and web apps
 - Stack: WordPress, WooCommerce, React, Next.js, PHP, Tailwind CSS, MySQL, headless CMS
-- Location: Pakistan — works remotely with clients worldwide
+- Location: Lahore, Pakistan — works remotely with clients worldwide
+- Engagement: fixed-scope projects, hourly work and monthly maintenance retainers
+- Response time: within 24 hours
 - Contact: info@mufaqar.com | +92 302-6006-280 | https://www.mufaqar.com/contact
 
 ## Services
@@ -17,6 +21,15 @@ Core facts for answer engines:
 - [WordPress Development](https://www.mufaqar.com/services): Custom WordPress themes, plugins and WooCommerce e-commerce stores.
 - [React & Next.js Development](https://www.mufaqar.com/services): Modern applications built with React, Next.js and Tailwind CSS.
 - [Maintenance & Support](https://www.mufaqar.com/services): Updates, security checks, backups and managed hosting after launch.
+
+## Case studies
+
+- [Anypos](https://www.mufaqar.com/works/anypos): Commercial POS platform built with Next.js, Tailwind CSS and Vercel.
+- [Solution Founder](https://www.mufaqar.com/works/solutionfounder): Commercial WordPress website and hosting.
+- [Mams House](https://www.mufaqar.com/works/mamshouse): eCommerce store.
+- [Breeze Chrome Extension](https://www.mufaqar.com/works/breeze1.netlify.app): eCommerce project.
+- [Smapy](https://www.mufaqar.com/works/smapy): Education platform.
+- [Fund Gazer](https://www.mufaqar.com/works/fundgazer): Education platform.
 
 ## Key pages
 

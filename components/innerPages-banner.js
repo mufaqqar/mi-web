@@ -15,7 +15,7 @@ export default function InnerPages_Banner({ subtitle, title }) {
         <div className='md:w-1/2 w-full'>
         </div>
     </div>
-    <Image src="/images/svgs/blocks3.svg" alt='blocks3.svg' width={426} height={286} className='absolute 2xl:right-0 lg:right-[-131px] right-0 lg:bottom-[-150px] bottom-[-75px] md:w-auto w-1/2 z-10' />
+    <Image src="/images/svgs/blocks3.svg" alt='' aria-hidden='true' width={426} height={286} className='absolute 2xl:right-0 lg:right-[-131px] right-0 lg:bottom-[-150px] bottom-[-75px] md:w-auto w-1/2 z-10' />
 </section>
   )
 }
