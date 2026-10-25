@@ -14,6 +14,7 @@ const PageHead = ({
   noIndex,
   image,
   schema,
+  updated = '2026-10-25',
 }) => {
   const ogImage = image || OG_IMAGE;
   const schemas = schema ? [].concat(schema) : [];
@@ -31,6 +32,8 @@ const PageHead = ({
         }
       />
       <meta name="author" content="Mufaqar Islam" />
+      <meta name="last-modified" content={updated} />
+      <meta property="og:updated_time" content={`${updated}T00:00:00+05:00`} />
       <link rel="canonical" href={curl ? curl : url} />
 
       <meta property="og:locale" content="en_US" />
