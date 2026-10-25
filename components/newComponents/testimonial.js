@@ -6,7 +6,7 @@ const Testimonial = () => {
         <section className='bg-title_color md:py-[12.5rem] py-20 relative'>
             <div className='container mx-auto px-4'>
                 <h2 className='md:text-5xl text-2xl font-semibold text-white underline decoration-bs_link_color mb-12 text-center'>
-                    What Clients Say
+                    Client Testimonials
                 </h2>
                 <div className='flex flex-row md:gap-10 gap-5 items-start max-w-[880px] mx-auto '>
                     <Image src="/images/svgs/qout.svg" alt='' aria-hidden='true' width={123} height={98} sizes='123px' className='-mt-10 md:w-full w-[70px]' />

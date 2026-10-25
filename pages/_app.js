@@ -10,10 +10,10 @@ const portraitSchema = {
   "@context": "https://schema.org",
   "@type": "ImageObject",
   "@id": `${SITE_URL}/#portrait`,
-  "contentUrl": `${SITE_URL}/images/me.jpg`,
-  "url": `${SITE_URL}/images/me.jpg`,
+  "contentUrl": `${SITE_URL}/images/me.webp`,
+  "url": `${SITE_URL}/images/me.webp`,
   "name": "Mufaqar Islam",
-  "caption": "Mufaqar Islam, full stack web developer based in Lahore, Pakistan",
+  "caption": "Mufaqar Islam, WordPress, React and Next.js developer based in Lahore, Pakistan",
   "width": 718,
   "height": 982
 }
@@ -72,7 +72,7 @@ const websiteSchema = {
   "@type": "WebSite",
   "@id": `${SITE_URL}/#website`,
   "url": `${SITE_URL}/`,
-  "name": "Mufaqar Islam — Full Stack Web Developer",
+  "name": "Mufaqar Islam — WordPress, React & Next.js Developer",
   "inLanguage": "en-US",
   "publisher": { "@id": `${SITE_URL}/#organization` }
 }
@@ -103,6 +103,16 @@ const personSchema = {
     "https://github.com/mufaqar"
   ],
   "knowsAbout": ["WordPress", "React", "Next.js", "PHP", "TailwindCSS", "MySQL", "E-commerce", "Web Development", "API Development", "DevOps"],
+  "worksFor": { "@id": `${SITE_URL}/#organization` },
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Full Stack Web Developer",
+    "occupationalCategory": "Web Developer",
+    "occupationLocation": {
+      "@type": "City",
+      "name": "Lahore"
+    }
+  },
   "hasCredential": {
     "@type": "EducationalOccupationalCredential",
     "credentialCategory": "degree",
@@ -155,7 +165,7 @@ function MyApp({ Component, pageProps }) {
     <link
       rel="alternate"
       type="application/rss+xml"
-      title="Mufaqar Islam — Full Stack Web Developer"
+      title="Mufaqar Islam — WordPress, React & Next.js Developer"
       href="/feed.xml"
     />
     <link rel="llms" type="text/plain" href="/llms.txt" />

@@ -3,7 +3,7 @@ import Head from 'next/head';
 const SITE_URL = 'https://www.mufaqar.com';
 const OG_IMAGE = `${SITE_URL}/images/og.png`;
 const OG_IMAGE_ALT =
-  'Mufaqar Islam — Full Stack Web Developer specialising in WordPress, React and Next.js';
+  'Mufaqar Islam — WordPress, React and Next.js developer in Lahore, Pakistan';
 
 const PageHead = ({
   title,

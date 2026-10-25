@@ -72,7 +72,7 @@ export default function Contact_Us() {
   return (
     <>
       <PageHead
-        title="Contact Mufaqar Islam | Full Stack Web Developer"
+        title="Hire a WordPress, React & Next.js Developer | Contact"
         description="Tell me about your project. Get a clear scope, timeline and price from a senior WordPress, React and Next.js developer within 24 hours."
         url="https://www.mufaqar.com/contact"
         schema={contactSchema}
@@ -194,13 +194,14 @@ export default function Contact_Us() {
               </div>
               <div className='md:w-2/3 w-full'>
                 <form
+                  id="contact-form"
                   onSubmit={(e) => {
                     handleSubmit(onSubmit)(e);
                     setTimeout(() => {
                       setPopUp(true);
                     }, 3000);
                   }}
-                  className="flex flex-col gap-8 relative z-10"
+                  className="flex flex-col gap-8 relative z-10 scroll-mt-24"
                 >
                   <div className="w-full">
                     <label htmlFor="name" className="hidden">
@@ -209,6 +210,7 @@ export default function Contact_Us() {
                     <input
                       type="text"
                       id="name"
+                      autoComplete="name"
                       placeholder="Your Name"
                       className='text-xl font-semibold text-title_color py-[.8125rem] px-4 w-full rounded-lg border-2 border-[#afd2e9] outline-none focus:shadow-[0_0_0_.25rem_rgb(175,210,233,25%)]'
                       {...register('name', { required: true })}
@@ -226,6 +228,7 @@ export default function Contact_Us() {
                     <input
                       type="email"
                       id="email"
+                      autoComplete="email"
                       placeholder="Your Email"
                       className='text-xl font-semibold text-title_color py-[.8125rem] px-4 w-full rounded-lg border-2 border-[#afd2e9] outline-none focus:shadow-[0_0_0_.25rem_rgb(175,210,233,25%)]'
                       {...register('email', { required: true })}
@@ -241,8 +244,9 @@ export default function Contact_Us() {
                       Your Phone
                     </label>
                     <input
-                      type="phone"
+                      type="tel"
                       id="phone"
+                      autoComplete="tel"
                       placeholder="Your Phone"
                       className='text-xl font-semibold text-title_color py-[.8125rem] px-4 w-full rounded-lg border-2 border-[#afd2e9] outline-none focus:shadow-[0_0_0_.25rem_rgb(175,210,233,25%)]'
                       {...register('phone', { required: true })}
@@ -255,10 +259,9 @@ export default function Contact_Us() {
                   </div>
                   <div className="w-full">
                     <textarea
-                      type="text"
                       id="message"
-                      rows="10"
-                      placeholder="Tell us a little bit about your project"
+                      rows="6"
+                      placeholder="Tell me about your project, timeline and budget range"
                       className='text-xl font-semibold text-title_color py-[.8125rem] px-4 w-full rounded-lg border-2 border-[#afd2e9] outline-none focus:shadow-[0_0_0_.25rem_rgb(175,210,233,25%)]'
                       {...register('message', { required: true })}
                     ></textarea>
@@ -266,8 +269,11 @@ export default function Contact_Us() {
                   <button
                     type="submit"
                     className='text-xl font-semibold text-white bg-bs_btn_bg hover:bg-bs_link_color hover:border-bs_link_color py-[0.8125rem] px-[1.813rem] rounded-xl border-2 border-[#e42537] inline-block transition-all duration-300 w-fit'>
-                    Send Message
+                    SEND PROJECT BRIEF
                   </button>
+                  <p className="text-sm font-normal text-title_color -mt-4">
+                    I reply within 24 hours. No obligation and no sales team.
+                  </p>
                 </form>
               </div>
             </div>

@@ -179,6 +179,11 @@ export default function home2() {
     uploadDate: '2026-10-25',
     duration: 'PT28S',
     contentUrl: `${SITE_URL}/video/portfolio-reel.mp4`,
+    caption: {
+      '@type': 'MediaObject',
+      contentUrl: `${SITE_URL}/video/portfolio-reel.vtt`,
+      encodingFormat: 'text/vtt',
+    },
     embedUrl: `${SITE_URL}/#portfolio-reel`,
     isPartOf: { '@id': `${SITE_URL}/#website` },
     creator: { '@id': `${SITE_URL}/#person` },
@@ -190,15 +195,17 @@ export default function home2() {
     '@type': 'WebPage',
     '@id': `${SITE_URL}/#webpage`,
     url: `${SITE_URL}/`,
-    name: 'Mufaqar Islam — Full Stack Web Developer',
+    name: 'Mufaqar Islam — WordPress, React & Next.js Developer',
     description:
-      'Full stack web developer with 15+ years building WordPress, React and Next.js websites and web applications for clients worldwide.',
+      'WordPress, React and Next.js developer with 15+ years building fast, secure websites and web applications for clients worldwide.',
     isPartOf: { '@id': `${SITE_URL}/#website` },
     about: { '@id': `${SITE_URL}/#person` },
+    mainEntity: { '@id': `${SITE_URL}/#professional-service` },
+    author: { '@id': `${SITE_URL}/#person` },
     publisher: { '@id': `${SITE_URL}/#organization` },
     primaryImageOfPage: {
       '@type': 'ImageObject',
-      url: `${SITE_URL}/images/new-banner.png`,
+      url: `${SITE_URL}/images/new-banner.webp`,
       width: 942,
       height: 975,
     },
@@ -213,8 +220,8 @@ export default function home2() {
   return (
     <>
       <PageHead
-        title="Mufaqar Islam — WordPress, React & Next.js Developer"
-        description="Full stack web developer with 15+ years building fast, secure WordPress, React and Next.js sites. See live work and get a fixed-scope quote."
+        title="WordPress, React & Next.js Developer | Mufaqar Islam"
+        description="Need a WordPress, React or Next.js developer? Lahore-based, 15+ years, 880+ projects, fixed-scope quotes and post-launch support. See live work."
         url="https://www.mufaqar.com"
         schema={[
           webPageSchema,
@@ -230,7 +237,7 @@ export default function home2() {
           <div className="container mx-auto px-4 flex md:flex-row flex-col gap-6 items-center">
             <div className="md:w-1/2 w-full">
               <h1 className="md:text-6xl md:leading-[1] text-4xl font-bold text-[#1F2B37] mb-4">
-                Mufaqar Islam — Full Stack Web Developer
+                Mufaqar Islam — WordPress, React &amp; Next.js Developer
               </h1>
               <p className="text-sm font-semibold uppercase tracking-[0.15em] text-[#1F2B37] mb-4">
                 WordPress &middot; React &middot; Next.js &middot; PHP
@@ -242,23 +249,26 @@ export default function home2() {
                 on them.
               </p>
               <p className="md:text-xl text-base font-normal text-[#212121] mb-6">
-                Over 15 years of full-stack experience across front-end,
+                Over 15 years and 880+ delivered projects across front-end,
                 back-end, databases, DevOps and APIs.
               </p>
-              <div className="flex flex-wrap gap-4 items-center sm:mb-10">
+              <div className="flex flex-wrap gap-4 items-center">
                 <Link
-                  href="/contact"
-                  className="text-sm font-normal text-white bg-[#36CCDA] hover:bg-bs_link_color hover:border-bs_link_color py-[0.688rem] px-[1.813rem] border-2 border-[#36CCDA] inline-block transition-all duration-300"
+                  href="/contact#contact-form"
+                  className="text-sm font-semibold text-white bg-[#36CCDA] hover:bg-bs_link_color hover:border-bs_link_color py-[0.688rem] px-[1.813rem] border-2 border-[#36CCDA] inline-block transition-all duration-300"
                 >
-                  GET A PROJECT QUOTE
+                  BOOK A 15-MINUTE FIT CALL
                 </Link>
                 <Link
                   href="/works"
-                  className="text-sm font-normal text-[#1F2B37] hover:text-white hover:bg-[#1F2B37] py-[0.688rem] px-[1.813rem] border-2 border-[#1F2B37] inline-block transition-all duration-300"
+                  className="text-sm font-semibold text-[#1F2B37] hover:text-white hover:bg-[#1F2B37] py-[0.688rem] px-[1.813rem] border-2 border-[#1F2B37] inline-block transition-all duration-300"
                 >
-                  SEE LIVE PROJECTS
+                  SEE CASE STUDIES
                 </Link>
               </div>
+              <p className="text-sm font-normal text-[#4B5563] mt-3 mb-8">
+                Replies within 24 hours &middot; Fixed scope &middot; No obligation
+              </p>
               <dl
                 id="key-facts"
                 className="grid grid-cols-2 gap-x-6 gap-y-3 text-sm font-normal text-[#212121] mb-8"
@@ -268,8 +278,8 @@ export default function home2() {
                   <dd>15+ years in production</dd>
                 </div>
                 <div>
-                  <dt className="font-semibold">Stack</dt>
-                  <dd>WordPress, React, Next.js &amp; PHP</dd>
+                  <dt className="font-semibold">Projects delivered</dt>
+                  <dd>880+ for 200+ clients</dd>
                 </div>
                 <div>
                   <dt className="font-semibold">Based in</dt>
@@ -283,8 +293,8 @@ export default function home2() {
             </div>
             <div className="md:w-1/2 w-full">
               <Image
-                src="/images/new-banner.png"
-                alt="Mufaqar Islam, full stack web developer, at work"
+                src="/images/new-banner.webp"
+                alt="Mufaqar Islam, WordPress, React and Next.js developer, at work"
                 width={942}
                 height={975}
                 priority
@@ -342,7 +352,7 @@ export default function home2() {
             </div>
             <div>
               <Image
-                src="/images/branding.png"
+                src="/images/branding.webp"
                 alt="Full stack development services covering Next.js, Tailwind CSS and API integrations"
                 width={1000}
                 height={667}
@@ -393,7 +403,7 @@ export default function home2() {
             </div>
             <div>
               <Image
-                src="/images/wordpress.png"
+                src="/images/wordpress.webp"
                 alt="WordPress development services with custom themes, plugins and e-commerce"
                 width={886}
                 height={746}
@@ -452,7 +462,7 @@ export default function home2() {
             </div>
             <div>
               <Image
-                src="/images/hosting.png"
+                src="/images/hosting.webp"
                 alt="Website maintenance, support and hosting services for WordPress and React apps"
                 width={993}
                 height={669}
@@ -466,7 +476,7 @@ export default function home2() {
         <section className="md:py-[12.5rem] py-20 bg-bs_info">
           <div className="container mx-auto px-4">
             <h2 className="md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-6 text-center">
-              Why Clients Keep Working With Me
+              Why Clients Hire Me
             </h2>
             <p className="md:text-2xl text-base text-title_color text-center mb-12 max-w-[720px] mx-auto">
               Hiring a developer is a trust decision. These are the four things
@@ -526,7 +536,7 @@ export default function home2() {
         <section className="bg-title_color md:py-[12.5rem] py-20 relative">
           <div className="container mx-auto px-4">
             <h2 className="md:text-5xl text-2xl font-semibold text-white underline decoration-bs_link_color mb-6 text-center">
-              Work I&apos;m Proud Of
+              Selected WordPress, React &amp; Next.js Work
             </h2>
             <p className="md:text-2xl text-base text-white text-center mb-12 max-w-[720px] mx-auto">
               A sample of the platforms I have designed, built and still
@@ -561,7 +571,7 @@ export default function home2() {
         <section id="portfolio-reel" className="bg-white md:py-[10rem] py-16">
           <div className="container max-w-[900px] mx-auto px-4">
             <h2 className="md:text-4xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-6 text-center">
-              Portfolio reel
+              Portfolio Reel: WordPress, React &amp; Next.js Projects
             </h2>
             <p className="text-base md:text-lg font-normal text-title_color text-center mb-8 max-w-[720px] mx-auto">
               A 28-second walkthrough of recent WordPress, React and Next.js
@@ -577,6 +587,13 @@ export default function home2() {
               className="w-full h-auto bg-title_color"
             >
               <source src="/video/portfolio-reel.mp4" type="video/mp4" />
+              <track
+                kind="captions"
+                src="/video/portfolio-reel.vtt"
+                srcLang="en"
+                label="English"
+                default
+              />
               Your browser does not support the video tag.{' '}
               <a href="/video/portfolio-reel.mp4">Download the reel</a>.
             </video>
@@ -621,7 +638,7 @@ export default function home2() {
         <section className="bg-bs_info md:py-[12.5rem] py-20">
           <div className="container max-w-[860px] mx-auto px-4">
             <h2 className="md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-6 text-center">
-              Stack &amp; Tools
+              Tech Stack &amp; Tools
             </h2>
             <p className="md:text-2xl text-base text-title_color text-center mb-12 max-w-[720px] mx-auto">
               The technologies I use to build, launch and maintain WordPress,
@@ -669,8 +686,8 @@ export default function home2() {
         <section className="bg-white md:py-[8rem] py-16">
           <div className="container max-w-[960px] mx-auto px-4 flex md:flex-row flex-col gap-8 md:items-center">
             <Image
-              src="/images/me.jpg"
-              alt="Portrait of Mufaqar Islam, full stack web developer in Lahore, Pakistan"
+              src="/images/me.webp"
+              alt="Portrait of Mufaqar Islam, WordPress, React and Next.js developer in Lahore, Pakistan"
               width={718}
               height={982}
               sizes="(max-width: 768px) 60vw, 220px"
@@ -731,6 +748,10 @@ export default function home2() {
                 </li>
               </ul>
               <p className="text-sm font-normal text-title_color mb-2">
+                BS Computer Science &middot; Previously front-end developer at
+                SoftSgens.
+              </p>
+              <p className="text-sm font-normal text-title_color mb-2">
                 Performance work follows{' '}
                 <a
                   href="https://web.dev/vitals/"
@@ -764,7 +785,7 @@ export default function home2() {
         <section className="md:py-[12.5rem] py-20 bg-bs_secondary">
           <div className="container max-w-[860px] mx-auto px-4">
             <h2 className="md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-12 text-center">
-              Frequently Asked Questions
+              FAQs About Hiring a Web Developer
             </h2>
             <div className="flex flex-col gap-8">
               {faqs.map((item) => (

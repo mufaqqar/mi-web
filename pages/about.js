@@ -82,6 +82,18 @@ export default function About() {
               <dd>Fixed-scope projects and monthly retainers</dd>
             </div>
           </dl>
+          <h3 className="text-xl md:text-2xl font-semibold text-title_color mb-3">
+            Experience and credentials
+          </h3>
+          <ul className="list-disc pl-5 text-base md:text-lg font-normal text-title_color mb-6 flex flex-col gap-2">
+            <li>Independent full stack developer since 2010.</li>
+            <li>Previous front-end developer at SoftSgens.</li>
+            <li>BS Computer Science.</li>
+            <li>
+              Shares WordPress and web development knowledge with the local
+              community in Pakistan.
+            </li>
+          </ul>
           <p className="text-sm font-normal text-title_color">
             Last updated:{' '}
             <time dateTime="2026-10-25">October 25, 2026</time>

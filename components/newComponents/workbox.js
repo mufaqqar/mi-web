@@ -17,6 +17,15 @@ const Workbox = ({ cstm_class, data }) => {
                             {data?.title}
                         </Link>
                     </h3>
+                    {data?.features?.length > 0 && (
+                        <ul className='flex flex-wrap gap-2 mt-4'>
+                            {data.features.slice(0, 3).map((feature) => (
+                                <li key={feature.name} className='text-xs font-semibold text-white border border-white/40 px-2 py-1'>
+                                    {feature.name.replace(/,\s*$/, '')}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
                 </div>
             </div>
         </div>

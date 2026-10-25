@@ -72,7 +72,7 @@ export default function Works() {
         schema={worksSchema}
       />
       <InnerPages_Banner
-        title="Work"
+        title="Selected Work"
         subtitle="The majority of my work comes from word of mouth, repeat clients, and referrals. Here’s a selection of projects I’m especially proud of."
       />
       <section className="bg-white md:py-[5rem] py-12">
