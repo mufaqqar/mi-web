@@ -168,6 +168,23 @@ export default function home2() {
     })),
   };
 
+  const videoSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    '@id': `${SITE_URL}/#portfolio-reel`,
+    name: 'Mufaqar Islam — Web Development Portfolio Reel',
+    description:
+      'A 28-second portfolio reel showing WordPress, React and Next.js projects built and maintained by Mufaqar Islam, including Anypos, Solution Founder, Mams House, Breeze, Smapy and Fund Gazer.',
+    thumbnailUrl: `${SITE_URL}/video/portfolio-reel-poster.jpg`,
+    uploadDate: '2026-10-25',
+    duration: 'PT28S',
+    contentUrl: `${SITE_URL}/video/portfolio-reel.mp4`,
+    embedUrl: `${SITE_URL}/#portfolio-reel`,
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    creator: { '@id': `${SITE_URL}/#person` },
+    inLanguage: 'en-US',
+  };
+
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -178,6 +195,7 @@ export default function home2() {
       'Full stack web developer with 15+ years building WordPress, React and Next.js websites and web applications for clients worldwide.',
     isPartOf: { '@id': `${SITE_URL}/#website` },
     about: { '@id': `${SITE_URL}/#person` },
+    publisher: { '@id': `${SITE_URL}/#organization` },
     primaryImageOfPage: {
       '@type': 'ImageObject',
       url: `${SITE_URL}/images/new-banner.png`,
@@ -202,6 +220,7 @@ export default function home2() {
           webPageSchema,
           faqSchema,
           howToSchema,
+          videoSchema,
           reviewSchema,
           ...servicesSchema,
         ]}
@@ -536,6 +555,66 @@ export default function home2() {
                 See all case studies
               </Link>
             </p>
+          </div>
+        </section>
+
+        <section id="portfolio-reel" className="bg-white md:py-[10rem] py-16">
+          <div className="container max-w-[900px] mx-auto px-4">
+            <h2 className="md:text-4xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-6 text-center">
+              Portfolio reel
+            </h2>
+            <p className="text-base md:text-lg font-normal text-title_color text-center mb-8 max-w-[720px] mx-auto">
+              A 28-second walkthrough of recent WordPress, React and Next.js
+              work. Every project shown is live and was built by Mufaqar Islam.
+            </p>
+            <video
+              controls
+              preload="metadata"
+              playsInline
+              width={1280}
+              height={720}
+              poster="/video/portfolio-reel-poster.jpg"
+              className="w-full h-auto bg-title_color"
+            >
+              <source src="/video/portfolio-reel.mp4" type="video/mp4" />
+              Your browser does not support the video tag.{' '}
+              <a href="/video/portfolio-reel.mp4">Download the reel</a>.
+            </video>
+            <details className="mt-6 text-base font-normal text-title_color">
+              <summary className="cursor-pointer font-semibold">
+                Video transcript
+              </summary>
+              <ol className="list-decimal pl-5 mt-4 flex flex-col gap-2">
+                <li>
+                  Mufaqar Islam — full stack web developer working with
+                  WordPress, React, Next.js and PHP.
+                </li>
+                <li>
+                  Anypos — a commercial POS platform built with Next.js, Tailwind
+                  CSS and Vercel.
+                </li>
+                <li>
+                  Solution Founder — a commercial WordPress website with managed
+                  hosting.
+                </li>
+                <li>
+                  Mams House — a WordPress e-commerce store and product
+                  catalogue.
+                </li>
+                <li>
+                  Breeze Chrome Extension — a browser extension for online
+                  shopping.
+                </li>
+                <li>Smapy — an education platform built on WordPress.</li>
+                <li>
+                  Fund Gazer — an education and funding platform built on
+                  WordPress.
+                </li>
+                <li>
+                  Next project — mufaqar.com, info@mufaqar.com.
+                </li>
+              </ol>
+            </details>
           </div>
         </section>
 

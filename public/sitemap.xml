@@ -60,4 +60,14 @@
     <lastmod>2026-10-25</lastmod>
     <priority>0.64</priority>
   </url>
+  <url>
+    <loc>https://www.mufaqar.com/privacy</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://www.mufaqar.com/terms</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.30</priority>
+  </url>
 </urlset>

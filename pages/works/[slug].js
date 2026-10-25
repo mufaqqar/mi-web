@@ -66,6 +66,7 @@ export default function Work({ work }) {
       },
       screenshot: `${SITE_URL}${work.feature}`,
       creator: { "@id": `${SITE_URL}/#person` },
+      publisher: { "@id": `${SITE_URL}/#organization` },
       about: work.features.map((feature) => feature.name.replace(/,\s*$/, "")),
       genre: work.category,
       inLanguage: "en-US",
@@ -86,6 +87,89 @@ export default function Work({ work }) {
         subtitle="A live project designed, built and maintained by Mufaqar Islam."
         title={work.title}
       />
+      <section className="bg-white md:py-[5rem] py-12">
+        <div className="container max-w-[860px] mx-auto px-4">
+          <h2 className="md:text-4xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-6">
+            Project snapshot
+          </h2>
+          <p className="text-base md:text-lg font-normal text-title_color mb-6">
+            {work.title} is a {work.category.toLowerCase()} project built and
+            maintained by Mufaqar Islam using {stack.join(" and ")}. The live
+            site is online and the features below are in production use.
+          </p>
+          <table className="w-full border-collapse text-left mb-6">
+            <caption className="sr-only">
+              {work.title} project details
+            </caption>
+            <tbody>
+              <tr>
+                <th
+                  scope="row"
+                  className="py-3 pr-6 align-top text-base font-semibold text-title_color border-b border-gray-200"
+                >
+                  Project
+                </th>
+                <td className="py-3 text-base font-normal text-title_color border-b border-gray-200">
+                  {work.title}
+                </td>
+              </tr>
+              <tr>
+                <th
+                  scope="row"
+                  className="py-3 pr-6 align-top text-base font-semibold text-title_color border-b border-gray-200"
+                >
+                  Category
+                </th>
+                <td className="py-3 text-base font-normal text-title_color border-b border-gray-200">
+                  {work.category}
+                </td>
+              </tr>
+              <tr>
+                <th
+                  scope="row"
+                  className="py-3 pr-6 align-top text-base font-semibold text-title_color border-b border-gray-200"
+                >
+                  Stack
+                </th>
+                <td className="py-3 text-base font-normal text-title_color border-b border-gray-200">
+                  {stack.join(", ")}
+                </td>
+              </tr>
+              <tr>
+                <th
+                  scope="row"
+                  className="py-3 pr-6 align-top text-base font-semibold text-title_color border-b border-gray-200"
+                >
+                  Status
+                </th>
+                <td className="py-3 text-base font-normal text-title_color border-b border-gray-200">
+                  Live
+                </td>
+              </tr>
+              <tr>
+                <th
+                  scope="row"
+                  className="py-3 pr-6 align-top text-base font-semibold text-title_color"
+                >
+                  Developer
+                </th>
+                <td className="py-3 text-base font-normal text-title_color">
+                  <Link
+                    href="/about"
+                    className="underline hover:decoration-bs_btn_bg transition-all duration-300"
+                  >
+                    Mufaqar Islam
+                  </Link>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p className="text-sm font-normal text-title_color">
+            Last updated:{" "}
+            <time dateTime="2026-10-25">October 25, 2026</time>
+          </p>
+        </div>
+      </section>
       <section className="bg-bs_secondary md:py-[12.5rem] py-20 relative">
         <div className="container px-4 mx-auto">
           <Image

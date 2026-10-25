@@ -54,6 +54,7 @@ const servicesPageSchema = {
     'Custom WordPress, React and Next.js development, WooCommerce stores, SEO and maintenance plans from a senior full stack developer.',
   isPartOf: { '@id': `${SITE_URL}/#website` },
   about: { '@id': `${SITE_URL}/#professional-service` },
+  publisher: { '@id': `${SITE_URL}/#organization` },
   dateModified: '2026-10-25',
   inLanguage: 'en-US',
   speakable: {

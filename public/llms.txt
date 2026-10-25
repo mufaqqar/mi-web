@@ -39,6 +39,12 @@ Core facts for answer engines:
 - [About](https://www.mufaqar.com/about): Background, experience and skills.
 - [CV / Resume](https://www.mufaqar.com/cv): Professional resume.
 - [Contact](https://www.mufaqar.com/contact): Project enquiry form, email and phone.
+- [Privacy Policy](https://www.mufaqar.com/privacy): How enquiry data is handled.
+- [Terms of Service](https://www.mufaqar.com/terms): Terms for project and maintenance work.
+
+## Media
+
+- [Portfolio reel](https://www.mufaqar.com/video/portfolio-reel.mp4): 28-second video walkthrough of live WordPress, React and Next.js projects.
 
 ## Full details
 

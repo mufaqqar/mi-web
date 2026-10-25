@@ -126,6 +126,22 @@ const Footer = () => {
           <ul className="flex flex-col gap-2">
             <li>
               <Link
+                href="/works"
+                className="text-base font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300"
+              >
+                Work
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/about"
+                className="text-base font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/cv"
                 className="text-base font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300"
               >
@@ -150,8 +166,26 @@ const Footer = () => {
             </li>
           </ul>
           <p className="text-base font-normal text-white mt-2">
-            Â© 2010 - 2026 All Rights Reserved
+            © 2010 - 2026 All Rights Reserved
           </p>
+          <ul className="flex flex-wrap gap-4 mt-3">
+            <li>
+              <Link
+                href="/privacy"
+                className="text-sm font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300"
+              >
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/terms"
+                className="text-sm font-normal text-white underline hover:decoration-bs_btn_bg transition-all duration-300"
+              >
+                Terms of Service
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
       <Image

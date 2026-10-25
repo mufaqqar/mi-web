@@ -132,4 +132,12 @@ video calls.
 - About: https://www.mufaqar.com/about
 - Resume: https://www.mufaqar.com/cv
 - Contact: https://www.mufaqar.com/contact
+- Privacy policy: https://www.mufaqar.com/privacy
+- Terms of service: https://www.mufaqar.com/terms
 - Short version of this file: https://www.mufaqar.com/llms.txt
+
+## Media
+
+- Portfolio reel (28 seconds, MP4): https://www.mufaqar.com/video/portfolio-reel.mp4
+- Poster image: https://www.mufaqar.com/video/portfolio-reel-poster.jpg
+- Transcript: listed in the Portfolio reel section of the home page.

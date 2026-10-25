@@ -29,6 +29,42 @@ const logoSchema = {
   "height": 66
 }
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${SITE_URL}/#organization`,
+  "name": "Mufaqar Islam Web Development",
+  "alternateName": "Mufaqar Islam",
+  "url": `${SITE_URL}/`,
+  "logo": { "@id": `${SITE_URL}/#logo` },
+  "image": { "@id": `${SITE_URL}/#portrait` },
+  "founder": { "@id": `${SITE_URL}/#person` },
+  "foundingDate": "2010",
+  "email": "info@mufaqar.com",
+  "telephone": "+92 302-6006-280",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "134 B Ahmed Housing, Multan Road",
+    "addressLocality": "Lahore",
+    "addressRegion": "Punjab",
+    "addressCountry": "PK"
+  },
+  "sameAs": [
+    "https://www.facebook.com/mufaqar",
+    "https://www.linkedin.com/in/mufaqar",
+    "https://twitter.com/mufaqar",
+    "https://github.com/mufaqar"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "email": "info@mufaqar.com",
+    "telephone": "+92 302-6006-280",
+    "availableLanguage": ["English", "Urdu"],
+    "areaServed": "Worldwide"
+  }
+}
+
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -36,7 +72,7 @@ const websiteSchema = {
   "url": `${SITE_URL}/`,
   "name": "Mufaqar Islam — Full Stack Web Developer",
   "inLanguage": "en-US",
-  "publisher": { "@id": `${SITE_URL}/#person` }
+  "publisher": { "@id": `${SITE_URL}/#organization` }
 }
 
 const personSchema = {
@@ -123,6 +159,10 @@ function MyApp({ Component, pageProps }) {
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(logoSchema) }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
     />
     <script
       type="application/ld+json"

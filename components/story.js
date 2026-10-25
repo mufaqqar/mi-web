@@ -15,47 +15,47 @@ function Story() {
               <h2 className="text-center text-green-500 text-3xl font-extrabold leading-[42px] md:text-6xl md:leading-[70px]">
                 200+
               </h2>
-              <h6 className="mt-2 text-center h3">Clients Worldwide</h6>
+              <p className="mt-2 text-center h3">Clients Worldwide</p>
             </div>
             <div>
               <h2 className="text-center text-blue-500 text-3xl font-extrabold leading-[42px] md:text-6xl md:leading-[70px]">
                 10M+
               </h2>
-              <h6 className="mt-2 text-center h3">Lines of Code</h6>
+              <p className="mt-2 text-center h3">Lines of Code</p>
             </div>
             <div className="border-t-[1px] border-r-[1px] border-gray-300">
               <h2 className="text-center text-yellow-500 text-3xl font-extrabold leading-[42px] md:text-6xl md:leading-[70px]">
                 195+
               </h2>
-              <h6 className="mt-2 text-center h3">Client Retention</h6>
+              <p className="mt-2 text-center h3">Client Retention</p>
             </div>
             <div className="border-t-[1px] border-gray-300">
               <h2 className="text-center text-orange-500 text-3xl font-extrabold leading-[42px] md:text-6xl md:leading-[70px]">
                 15<sub className="text-2xl">Years</sub>
               </h2>
-              <h6 className="mt-2 text-center h3">In Business</h6>
+              <p className="mt-2 text-center h3">In Business</p>
             </div>
             <div className="border-t-[1px] border-r-[1px] border-gray-300">
               <h2 className="text-center text-fuchsia-500 text-3xl font-extrabold leading-[42px] md:text-6xl md:leading-[70px]">
                 880+
               </h2>
-              <h6 className="mt-2 text-center h3">Projects Completed</h6>
+              <p className="mt-2 text-center h3">Projects Completed</p>
             </div>
             <div className="border-t-[1px] border-gray-300 relative z-[2]">
               <h2 className="text-center text-cyan-500 text-3xl font-extrabold leading-[42px] md:text-6xl md:leading-[70px]">
                 24/7
               </h2>
-              <h6 className="mt-2 text-center h3">IT Support</h6>
+              <p className="mt-2 text-center h3">IT Support</p>
             </div>
-            <figure className="absolute bottom-4 z-[-1] -left-20">
-              <Image src={StoryBgOne} alt="Bg-1"></Image>
+            <figure className="absolute bottom-4 z-[-1] -left-20" aria-hidden="true">
+              <Image src={StoryBgOne} alt=""></Image>
             </figure>
-            <figure className="absolute lg:-right-12 z-[-1] -bottom-16">
-              <Image src={StoryBgTwo} alt="Bg-1" className=""></Image>
+            <figure className="absolute lg:-right-12 z-[-1] -bottom-16" aria-hidden="true">
+              <Image src={StoryBgTwo} alt="" className=""></Image>
             </figure>
           </div>
           <div className="mt-16 md:pl-20 md:mt-0">
-            <h6 className="text-bs_link_color h3">My Story</h6>
+            <p className="text-bs_link_color h3">My Story</p>
             <h2 className="md:text-4xl text-2xl font-semibold text-white underline decoration-bs_link_color mb-8">
               Muhammad Mufaqar Islam
             </h2>

@@ -19,6 +19,7 @@ const aboutSchema = [
     description:
       'Background, experience and skills of Mufaqar Islam, a full stack web developer specialising in WordPress, React and Next.js.',
     mainEntity: { '@id': `${SITE_URL}/#person` },
+    publisher: { '@id': `${SITE_URL}/#organization` },
     dateModified: '2026-10-25',
     inLanguage: 'en-US',
     speakable: {

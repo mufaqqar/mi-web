@@ -30,7 +30,13 @@ const contactSchema = [
     description:
       'Contact Mufaqar Islam for WordPress, React and Next.js development projects.',
     mainEntity: { '@id': `${SITE_URL}/#professional-service` },
+    publisher: { '@id': `${SITE_URL}/#organization` },
+    dateModified: '2026-10-25',
     inLanguage: 'en-US',
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '#contact-answer'],
+    },
   },
 ];
 
@@ -75,6 +81,52 @@ export default function Contact_Us() {
         <InnerPages_Banner
           title="LET’S WORK TOGETHER"
           subtitle="I’d love to plan, design & develop your website." />
+        <section className="bg-white md:py-[5rem] py-12">
+          <div className="container max-w-[860px] mx-auto px-4">
+            <h2 className="md:text-4xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-6">
+              Start a project with Mufaqar Islam
+            </h2>
+            <p
+              id="contact-answer"
+              className="text-base md:text-lg font-normal text-title_color mb-6"
+            >
+              Send a short brief using the form, email info@mufaqar.com or call
+              +92 302-6006-280. You get a reply within 24 hours with questions, a
+              recommended approach and a fixed price for WordPress, React or
+              Next.js work.
+            </p>
+            <h3 className="text-xl md:text-2xl font-semibold text-title_color mb-3">
+              What happens next
+            </h3>
+            <ol className="list-decimal pl-5 text-base md:text-lg font-normal text-title_color mb-6 flex flex-col gap-2">
+              <li>
+                You send the brief: goals, pages or features, deadline and
+                budget range.
+              </li>
+              <li>
+                I reply within 24 hours with questions, a recommended stack and
+                a fixed-scope quote.
+              </li>
+              <li>
+                We agree the scope and schedule, then kick off with a shared
+                project plan.
+              </li>
+            </ol>
+            <h3 className="text-xl md:text-2xl font-semibold text-title_color mb-3">
+              What to include in your brief
+            </h3>
+            <ul className="list-disc pl-5 text-base md:text-lg font-normal text-title_color mb-6 flex flex-col gap-2">
+              <li>What the site or app needs to do, and who it is for.</li>
+              <li>Any existing website, brand assets or content you have.</li>
+              <li>Your target launch date and budget range.</li>
+              <li>Integrations you already use, such as payments or CRM.</li>
+            </ul>
+            <p className="text-sm font-normal text-title_color">
+              Last updated:{' '}
+              <time dateTime="2026-10-25">October 25, 2026</time>
+            </p>
+          </div>
+        </section>
         <section className='bg-title_color md:py-[12.5rem] py-20 relative'>
           <div className='container mx-auto px-4 relative'>
             <div className='flex md:flex-row flex-col md:gap-10 gap-5 items-start'>
@@ -117,7 +169,7 @@ export default function Contact_Us() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="http://github.com/mufaqar" target='_blank' className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
+                    <Link href="https://github.com/mufaqar" target='_blank' rel="noopener noreferrer" className='md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300'>
                       <FaGithubSquare />
                       <span className='sr-only'>Mufaqar Islam on GitHub</span>
                     </Link>
