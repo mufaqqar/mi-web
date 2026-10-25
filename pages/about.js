@@ -27,8 +27,8 @@ export default function About() {
   return (
     <main className='overflow-x-hidden'>
       <PageHead
-        title="About Mufaqar Islam | 10+ Years Full Stack Developer"
-        description="10+ years shipping WordPress, React and Next.js products for clients worldwide. How I work, what I specialise in and how to start a project."
+        title="About Mufaqar Islam | 15+ Years Full Stack Developer"
+        description="15+ years shipping WordPress, React and Next.js products for clients worldwide. How I work, what I specialise in and how to start a project."
         url="https://www.mufaqar.com/about"
         schema={aboutSchema}
       />

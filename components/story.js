@@ -31,7 +31,7 @@ function Story() {
             </div>
             <div className="border-t-[1px] border-gray-300">
               <h2 className="text-center text-orange-500 text-3xl font-extrabold leading-[42px] md:text-6xl md:leading-[70px]">
-                14<sub className="text-2xl">Years</sub>
+                15<sub className="text-2xl">Years</sub>
               </h2>
               <h6 className="mt-2 text-center h3">In Business</h6>
             </div>
@@ -70,7 +70,7 @@ function Story() {
               at the age of 24, diving headfirst into learning and mastering all
               things WordPress. Over the years, I honed my skills in WordPress,
               React.js, and modern development frameworks like Next.js and
-              TailwindCSS. Today, with over 14 years of experience, I work
+              TailwindCSS. Today, with over 15 years of experience, I work
               independently, delivering high-quality web development services to
               clients worldwide.
             </p>

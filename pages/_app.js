@@ -24,7 +24,7 @@ const personSchema = {
   "url": `${SITE_URL}/`,
   "image": OG_IMAGE,
   "jobTitle": "Full Stack Web Developer",
-  "description": "Full stack web developer with over a decade of experience building, launching and maintaining WordPress, React, Next.js and PHP websites and web applications.",
+  "description": "Full stack web developer with over 15 years of experience building, launching and maintaining WordPress, React, Next.js and PHP websites and web applications.",
   "telephone": "+92 302-6006-280",
   "email": "info@mufaqar.com",
   "address": {

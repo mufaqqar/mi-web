@@ -37,8 +37,8 @@ const reasons = [
     text: 'There are no account managers and no handoffs. The person who scopes your project is the person who builds it.',
   },
   {
-    title: 'Over a decade in production',
-    text: 'I have designed, launched and maintained live websites for more than 10 years, from small business sites to complex web apps.',
+    title: '15+ years in production',
+    text: 'I have designed, launched and maintained live websites for more than 15 years, from small business sites to complex web apps.',
   },
   {
     title: 'One team for the whole build',
@@ -113,7 +113,7 @@ export default function home2() {
     <>
       <PageHead
         title="Mufaqar Islam — WordPress, React & Next.js Developer"
-        description="Full stack web developer with 10+ years building fast, secure WordPress, React and Next.js sites. See live work and get a fixed-scope quote."
+        description="Full stack web developer with 15+ years building fast, secure WordPress, React and Next.js sites. See live work and get a fixed-scope quote."
         url="https://www.mufaqar.com"
         schema={[faqSchema, reviewSchema, ...servicesSchema]}
       />
@@ -132,7 +132,7 @@ export default function home2() {
                 organizations that depend on them.
               </p>
               <p className="md:text-xl text-base font-normal text-[#212121] mb-6">
-                Over 10 years of full-stack experience across front-end,
+                Over 15 years of full-stack experience across front-end,
                 back-end, databases, DevOps and APIs.
               </p>
               <div className="flex flex-wrap gap-4 items-center sm:mb-10">
@@ -152,7 +152,7 @@ export default function home2() {
               <dl className="grid grid-cols-2 gap-x-6 gap-y-3 text-sm font-normal text-[#212121] mb-8">
                 <div>
                   <dt className="font-semibold">Experience</dt>
-                  <dd>10+ years in production</dd>
+                  <dd>15+ years in production</dd>
                 </div>
                 <div>
                   <dt className="font-semibold">Stack</dt>

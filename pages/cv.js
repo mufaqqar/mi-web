@@ -32,7 +32,7 @@ export default function CV() {
     <>
       <PageHead
         title="Resume | Mufaqar Islam — Full Stack Developer"
-        description="View the resume of Mufaqar Islam — a seasoned Full Stack Web Developer with 10+ years of experience in WordPress, React, Next.js, PHP, and TailwindCSS. Available for hire."
+        description="View the resume of Mufaqar Islam — a seasoned Full Stack Web Developer with 15+ years of experience in WordPress, React, Next.js, PHP, and TailwindCSS. Available for hire."
         url="https://www.mufaqar.com/cv"
         schema={cvSchema}
       />
@@ -75,7 +75,7 @@ export default function CV() {
               variants={fadeUp}
               className="text-sm font-medium tracking-widest text-title_color"
             >
-              Seasoned ReactJs/WordPress/PHP Developer with over a decade of
+              Seasoned ReactJs/WordPress/PHP Developer with over 15 years of
               experience building, launching, and managing complex websites also
               specialize in all things "MERN".
             </motion.p>
@@ -151,7 +151,7 @@ export default function CV() {
               About me
             </h3>
             <p className="text-base text-title_color">
-              ReactJs Developer with 10+ years of extensive Frontend and Backend
+              ReactJs Developer with 15+ years of extensive Frontend and Backend
               experience. React, Next Js | Bootstrap, and Tailwind Css
               Familiarity with modern front-end build pipelines and tools.
             </p>

@@ -35,9 +35,14 @@ export default function Work({ work }) {
     );
   }
 
-  const description = `How Mufaqar Islam designed, built and launched ${work.title} — a ${work.category.toLowerCase()} project using ${work.features
-    .map((feature) => feature.name.replace(/,\s*$/, ""))
-    .join(", ")}. See the stack, scope and live site.`;
+  const stack = (work.features.length > 1
+    ? work.features.slice(1, 3)
+    : work.features
+  ).map((feature) => feature.name.replace(/,\s*$/, ""));
+
+  const description = `${work.title} case study: how Mufaqar Islam built this ${work.category.toLowerCase()} project with ${stack.join(
+    " and "
+  )}. View the build.`;
 
   const workSchema = [
     breadcrumbSchema([

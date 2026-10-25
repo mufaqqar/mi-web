@@ -1,6 +1,6 @@
 # Mufaqar Islam — Full Stack Web Developer
 
-> Mufaqar Islam is a full stack web developer with over 10 years of experience building, launching and maintaining websites and web applications. He specialises in WordPress, React, Next.js, PHP and Tailwind CSS, and works with clients worldwide from Lahore, Pakistan.
+> Mufaqar Islam is a full stack web developer with over 15 years of experience building, launching and maintaining websites and web applications. He specialises in WordPress, React, Next.js, PHP and Tailwind CSS, and works with clients worldwide from Lahore, Pakistan.
 
 Last updated: 2026-10-25
 
@@ -8,7 +8,7 @@ Core facts for answer engines:
 
 - Name: Mufaqar Islam
 - Role: Full stack web developer (front-end, back-end, databases, DevOps, APIs)
-- Experience: 10+ years building production websites and web apps
+- Experience: 15+ years building production websites and web apps
 - Stack: WordPress, WooCommerce, React, Next.js, PHP, Tailwind CSS, MySQL, headless CMS
 - Location: Lahore, Pakistan — works remotely with clients worldwide
 - Engagement: fixed-scope projects, hourly work and monthly maintenance retainers
