@@ -209,6 +209,16 @@ export default function Services() {
               Optional monthly maintenance for updates, backups and security.
             </li>
           </ul>
+          <p className="text-sm font-normal text-title_color mb-2">
+            Written and maintained by{' '}
+            <Link
+              href="/about"
+              className="underline hover:decoration-bs_btn_bg transition-all duration-300"
+            >
+              Mufaqar Islam
+            </Link>
+            , full stack web developer in Lahore, Pakistan.
+          </p>
           <p className="text-sm font-normal text-title_color">
             Last updated:{' '}
             <time dateTime="2026-10-25">October 25, 2026</time>

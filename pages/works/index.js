@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import Workbox from '../../components/newComponents/workbox';
 import Testimonial from '../../components/newComponents/testimonial';
 import CTA from '../../components/newComponents/cta';
@@ -94,6 +95,16 @@ export default function Works() {
             and others — so you can compare work that matches your brief. Most
             of this work comes from repeat clients and referrals, and several
             sites are still supported on maintenance plans today.
+          </p>
+          <p className="text-sm font-normal text-title_color mb-2">
+            Projects by{' '}
+            <Link
+              href="/about"
+              className="underline hover:decoration-bs_btn_bg transition-all duration-300"
+            >
+              Mufaqar Islam
+            </Link>
+            , full stack web developer in Lahore, Pakistan.
           </p>
           <p className="text-sm font-normal text-title_color">
             Last updated:{' '}

@@ -66,6 +66,7 @@ export default function Work({ work }) {
       },
       screenshot: `${SITE_URL}${work.feature}`,
       creator: { "@id": `${SITE_URL}/#person` },
+      author: { "@id": `${SITE_URL}/#person` },
       publisher: { "@id": `${SITE_URL}/#organization` },
       about: work.features.map((feature) => feature.name.replace(/,\s*$/, "")),
       genre: work.category,

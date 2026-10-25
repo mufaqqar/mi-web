@@ -730,6 +730,27 @@ export default function home2() {
                   </Link>
                 </li>
               </ul>
+              <p className="text-sm font-normal text-title_color mb-2">
+                Performance work follows{' '}
+                <a
+                  href="https://web.dev/vitals/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:decoration-bs_btn_bg transition-all duration-300"
+                >
+                  Google&apos;s Core Web Vitals
+                </a>{' '}
+                and builds follow the{' '}
+                <a
+                  href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:decoration-bs_btn_bg transition-all duration-300"
+                >
+                  W3C accessibility guidelines
+                </a>
+                .
+              </p>
               <p className="text-sm font-normal text-title_color">
                 Last updated:{' '}
                 <time dateTime="2026-10-25">October 25, 2026</time>

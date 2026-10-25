@@ -42,6 +42,8 @@ const organizationSchema = {
   "foundingDate": "2010",
   "email": "info@mufaqar.com",
   "telephone": "+92 302-6006-280",
+  "areaServed": ["PK", "Worldwide"],
+  "knowsAbout": ["WordPress", "WooCommerce", "React", "Next.js", "PHP", "Laravel", "Tailwind CSS", "Web Development", "Technical SEO", "Web Performance"],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "134 B Ahmed Housing, Multan Road",
@@ -100,7 +102,12 @@ const personSchema = {
     "https://twitter.com/mufaqar",
     "https://github.com/mufaqar"
   ],
-  "knowsAbout": ["WordPress", "React", "Next.js", "PHP", "TailwindCSS", "MySQL", "E-commerce", "Web Development", "API Development", "DevOps"]
+  "knowsAbout": ["WordPress", "React", "Next.js", "PHP", "TailwindCSS", "MySQL", "E-commerce", "Web Development", "API Development", "DevOps"],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "degree",
+    "name": "BS Computer Science"
+  }
 }
 
 const serviceSchema = {

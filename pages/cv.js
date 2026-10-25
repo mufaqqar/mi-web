@@ -1,4 +1,4 @@
-import { BsHeadphones } from "react-icons/bs";
+﻿import { BsHeadphones } from "react-icons/bs";
 import { BsEnvelopeOpen } from "react-icons/bs";
 import { BsCloudDownload } from "react-icons/bs";
 import { GiGraduateCap } from "react-icons/gi";
@@ -23,7 +23,13 @@ const cvSchema = [
     name: "Resume of Mufaqar Islam",
     url: `${SITE_URL}/cv`,
     mainEntity: { "@id": `${SITE_URL}/#person` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+    dateModified: "2026-10-25",
     inLanguage: "en-US",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1"],
+    },
   },
   {
     "@context": "https://schema.org",
@@ -61,25 +67,25 @@ export default function CV() {
             >
               <Image
                 src={Profile_Pic}
-                alt={Profile_Pic}
+                alt="Portrait of Mufaqar Islam, full stack web developer"
                 className="object-contain"
               />
             </motion.div>
           </div>
           <div className="md:w-2/3 w-full md:pl-11 px-4 md:text-left text-center">
-            <motion.h2
+            <motion.h1
               variants={fadeUp}
               className="md:text-6xl text-4xl font-semibold text-title_color mb-4"
             >
               Mufaqar Islam
-            </motion.h2>
-            <motion.h6
+            </motion.h1>
+            <motion.p
               variants={fadeUp}
               className="md:text-2xl text-xl font-medium mb-4 text-title_color"
             >
               Full Stack Web Developer | WordPress | React | NextJs |
               Tailwindcss
-            </motion.h6>
+            </motion.p>
             <motion.p
               variants={fadeUp}
               className="text-sm font-medium tracking-widest text-title_color"
@@ -100,6 +106,12 @@ export default function CV() {
               className="text-sm font-medium tracking-widest text-title_color"
             >
               EDUCATION: BS Computer Science
+            </motion.p>
+            <motion.p
+              variants={fadeUp}
+              className="text-sm font-medium tracking-widest text-title_color"
+            >
+              LAST UPDATED: OCTOBER 25, 2026
             </motion.p>
           </div>
         </div>
@@ -156,9 +168,9 @@ export default function CV() {
       >
         <div className="md:max-w-[1140px] mx-auto grid md:grid-cols-2">
           <motion.div variants={fadeUp} className="md:p-8 p-5">
-            <h3 className="text-2xl font-bold uppercase tracking-tighter text-title_color mb-5 underline decoration-bs_link_color">
+            <h2 className="text-2xl font-bold uppercase tracking-tighter text-title_color mb-5 underline decoration-bs_link_color">
               About me
-            </h3>
+            </h2>
             <p className="text-base text-title_color">
               ReactJs Developer with 15+ years of extensive Frontend and Backend
               experience. React, Next Js | Bootstrap, and Tailwind Css
@@ -167,9 +179,9 @@ export default function CV() {
           </motion.div>
           <motion.div variants={fadeUp} className="md:p-8 p-5">
             <div className="p-8 shadow-xl transform hover:-translate-y-3 duration-500">
-              <h5 className="text-xl font-bold tracking-tighter text-title_color mb-3">
+              <h2 className="text-xl font-bold tracking-tighter text-title_color mb-3">
                 Personal Details
-              </h5>
+              </h2>
               <div className="flex md:flex-row flex-col justify-between">
                 <ul className="flex flex-col md:space-y-4">
                   <li className="font-medium text-sm flex items-center space-x-2 text-title_color">
@@ -299,9 +311,9 @@ export default function CV() {
           <div className="grid md:grid-cols-2 gap-5">
             <motion.div variants={fadeUp} className="shadow-xl p-8 ">
               <GiGraduateCap className="text-3xl text-bs_secondary" />
-              <h5 className="text-xl font-bold tracking-tighter text-title_color mb-2">
+              <h3 className="text-xl font-bold tracking-tighter text-title_color mb-2">
                 PU Lahore
-              </h5>
+              </h3>
               <p className="font-medium text-sm text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300">
                 Bachelor in computer Science
               </p>
@@ -311,9 +323,9 @@ export default function CV() {
             </motion.div>
             <motion.div variants={fadeUp} className="shadow-xl p-8">
               <GiGraduateCap className="text-3xl text-bs_secondary" />
-              <h5 className="text-xl font-bold tracking-tighter text-title_color mb-2">
+              <h3 className="text-xl font-bold tracking-tighter text-title_color mb-2">
                 EVs Lahore
-              </h5>
+              </h3>
               <p className="font-medium text-sm text-title_color underline hover:decoration-bs_btn_bg transition-all duration-300">
                 Certification in Web Development
               </p>
@@ -488,9 +500,9 @@ export default function CV() {
             variants={fadeUp}
             className="p-8 shadow-xl md:w-1/4 w-full"
           >
-            <h5 className="text-xl font-bold tracking-tighter text-title_color mb-3">
+            <h3 className="text-xl font-bold tracking-tighter text-title_color mb-3">
               Languages
-            </h5>
+            </h3>
             <ul className="flex flex-col">
               <li className="font-medium text-sm uppercase flex items-center space-x-5 text-title_color">
                 <span>ENGLISH </span>

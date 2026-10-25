@@ -121,6 +121,16 @@ export default function Contact_Us() {
               <li>Your target launch date and budget range.</li>
               <li>Integrations you already use, such as payments or CRM.</li>
             </ul>
+            <p className="text-sm font-normal text-title_color mb-2">
+              Enquiries are handled directly by{' '}
+              <Link
+                href="/about"
+                className="underline hover:decoration-bs_btn_bg transition-all duration-300"
+              >
+                Mufaqar Islam
+              </Link>
+              , not a sales team.
+            </p>
             <p className="text-sm font-normal text-title_color">
               Last updated:{' '}
               <time dateTime="2026-10-25">October 25, 2026</time>

@@ -35,6 +35,8 @@ const PageHead = ({
       <meta name="last-modified" content={updated} />
       <meta property="og:updated_time" content={`${updated}T00:00:00+05:00`} />
       <link rel="canonical" href={curl ? curl : url} />
+      <link rel="alternate" hrefLang="en" href={curl ? curl : url} />
+      <link rel="alternate" hrefLang="x-default" href={curl ? curl : url} />
 
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content={ogType || 'website'} />
