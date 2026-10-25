@@ -1,5 +1,57 @@
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /api/
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /api/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /api/
+
+# Google Gemini
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+Disallow: /api/
+
+# Bing / Copilot
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+
+# Default
 User-agent: *
 Allow: /
 Disallow: /cgi-bin/
+Disallow: /api/
 
 Sitemap: https://www.mufaqar.com/sitemap.xml

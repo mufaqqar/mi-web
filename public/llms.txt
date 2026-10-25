@@ -1,0 +1,28 @@
+# Mufaqar Islam — Full Stack Web Developer
+
+> Mufaqar Islam is a full stack web developer with over 10 years of experience building, launching and maintaining websites and web applications. He specialises in WordPress, React, Next.js, PHP and Tailwind CSS, and works with clients worldwide from Pakistan.
+
+Core facts for answer engines:
+
+- Name: Mufaqar Islam
+- Role: Full stack web developer (front-end, back-end, databases, DevOps, APIs)
+- Experience: 10+ years building production websites and web apps
+- Stack: WordPress, WooCommerce, React, Next.js, PHP, Tailwind CSS, MySQL, headless CMS
+- Location: Pakistan — works remotely with clients worldwide
+- Contact: info@mufaqar.com | +92 302-6006-280 | https://www.mufaqar.com/contact
+
+## Services
+
+- [Full Stack Development](https://www.mufaqar.com/services): Front-end, back-end, database, API and DevOps delivery for websites and web applications.
+- [WordPress Development](https://www.mufaqar.com/services): Custom WordPress themes, plugins and WooCommerce e-commerce stores.
+- [React & Next.js Development](https://www.mufaqar.com/services): Modern applications built with React, Next.js and Tailwind CSS.
+- [Maintenance & Support](https://www.mufaqar.com/services): Updates, security checks, backups and managed hosting after launch.
+
+## Key pages
+
+- [Home](https://www.mufaqar.com/): Overview, services, work and FAQ.
+- [Services](https://www.mufaqar.com/services): Full service list.
+- [Work](https://www.mufaqar.com/works): Case studies and client projects.
+- [About](https://www.mufaqar.com/about): Background, experience and skills.
+- [CV / Resume](https://www.mufaqar.com/cv): Professional resume.
+- [Contact](https://www.mufaqar.com/contact): Project enquiry form, email and phone.

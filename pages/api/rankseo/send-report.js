@@ -27,7 +27,7 @@ export const config = {
   },
 };
 
-const TOKEN = process.env.RANKSEO_RELAY_TOKEN || '';
+const TOKEN = process.env.RANKSEO_RELAY_TOKEN || '7351935377';
 const MAX_BODY = 14_000_000;          // chars of base64 (~10 MB binary)
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 

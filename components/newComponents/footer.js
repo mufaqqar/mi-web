@@ -34,7 +34,7 @@ const Footer = () => {
       </div> */}
       <div className="container mx-auto px-4 grid md:grid-cols-3 grid-cols-1 gap-5 mt-16">
         <div>
-          <h6 className="text-2xl font-semibold text-white mb-4">Contact</h6>
+          <h2 className="text-2xl font-semibold text-white mb-4">Contact</h2>
           <ul className="flex flex-col gap-2">
             <li>
               <Link
@@ -60,59 +60,69 @@ const Footer = () => {
               <Link
                 href="https://www.facebook.com/mufaqar"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300"
               >
                 <FaFacebookSquare />
+                <span className="sr-only">Mufaqar Islam on Facebook</span>
               </Link>
             </li>
             <li>
               <Link
                 href="https://www.linkedin.com/in/mufaqar"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300"
               >
                 <FaLinkedin />
+                <span className="sr-only">Mufaqar Islam on LinkedIn</span>
               </Link>
             </li>
             <li>
               <Link
                 href="https://twitter.com/mufaqar"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300"
               >
                 <FaTwitterSquare />
+                <span className="sr-only">Mufaqar Islam on Twitter</span>
               </Link>
             </li>
             <li>
               <Link
-                href="http://github.com/mufaqar"
+                href="https://github.com/mufaqar"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300"
               >
                 <FaGithubSquare />
+                <span className="sr-only">Mufaqar Islam on GitHub</span>
               </Link>
             </li>
             <li>
               <Link
                 href="https://join.skype.com/invite/M0ilv0J1egAb"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="md:text-4xl text-2xl text-white hover:text-bs_link_color inline-flex transition-all duration-300"
               >
                 <FaSkype />
+                <span className="sr-only">Mufaqar Islam on Skype</span>
               </Link>
             </li>
           </ul>
         </div>
         <div>
-          <h6 className="text-2xl font-semibold text-white mb-4">Address</h6>
+          <h2 className="text-2xl font-semibold text-white mb-4">Address</h2>
           <p className="text-base font-normal text-white md:w-48">
             134 B Ahmed Housing Multan Lahore , Pakistan
           </p>
         </div>
         <div>
-          <h6 className="text-2xl font-semibold text-white mb-4">
+          <h2 className="text-2xl font-semibold text-white mb-4">
             Quick Links
-          </h6>
+          </h2>
           <ul className="flex flex-col gap-2">
             <li>
               <Link
@@ -146,7 +156,8 @@ const Footer = () => {
       </div>
       <Image
         src="/images/svgs/blocks3.svg"
-        alt="blocks3.svg"
+        alt=""
+        aria-hidden="true"
         width={426}
         height={286}
         className="absolute 2xl:left-0 lg:left-[-131px] left-0 lg:top-[-150px] top-[-75px] md:w-auto w-1/2 z-10"
