@@ -6,6 +6,29 @@ import '../styles/globals.css'
 const SITE_URL = 'https://www.mufaqar.com'
 const OG_IMAGE = `${SITE_URL}/images/og.png`
 
+const portraitSchema = {
+  "@context": "https://schema.org",
+  "@type": "ImageObject",
+  "@id": `${SITE_URL}/#portrait`,
+  "contentUrl": `${SITE_URL}/images/me.jpg`,
+  "url": `${SITE_URL}/images/me.jpg`,
+  "name": "Mufaqar Islam",
+  "caption": "Mufaqar Islam, full stack web developer based in Lahore, Pakistan",
+  "width": 718,
+  "height": 982
+}
+
+const logoSchema = {
+  "@context": "https://schema.org",
+  "@type": "ImageObject",
+  "@id": `${SITE_URL}/#logo`,
+  "contentUrl": `${SITE_URL}/images/logo.png`,
+  "url": `${SITE_URL}/images/logo.png`,
+  "name": "Mufaqar Islam logo",
+  "width": 303,
+  "height": 66
+}
+
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -22,11 +45,12 @@ const personSchema = {
   "@id": `${SITE_URL}/#person`,
   "name": "Mufaqar Islam",
   "url": `${SITE_URL}/`,
-  "image": OG_IMAGE,
+  "image": { "@id": `${SITE_URL}/#portrait` },
   "jobTitle": "Full Stack Web Developer",
   "description": "Full stack web developer with over 15 years of experience building, launching and maintaining WordPress, React, Next.js and PHP websites and web applications.",
   "telephone": "+92 302-6006-280",
   "email": "info@mufaqar.com",
+  "knowsLanguage": ["en", "ur"],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "134 B Ahmed Housing, Multan Road",
@@ -50,6 +74,7 @@ const serviceSchema = {
   "name": "Mufaqar Islam - Full Stack Web Developer",
   "url": `${SITE_URL}/`,
   "image": OG_IMAGE,
+  "logo": { "@id": `${SITE_URL}/#logo` },
   "telephone": "+92 302-6006-280",
   "email": "info@mufaqar.com",
   "address": {
@@ -84,6 +109,21 @@ const serviceSchema = {
 function MyApp({ Component, pageProps }) {
   return <>
   <Head>
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Mufaqar Islam — Full Stack Web Developer"
+      href="/feed.xml"
+    />
+    <link rel="llms" type="text/plain" href="/llms.txt" />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(portraitSchema) }}
+    />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(logoSchema) }}
+    />
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}

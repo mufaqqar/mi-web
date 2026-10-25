@@ -25,6 +25,15 @@ const cvSchema = [
     mainEntity: { "@id": `${SITE_URL}/#person` },
     inLanguage: "en-US",
   },
+  {
+    "@context": "https://schema.org",
+    "@type": "DigitalDocument",
+    name: "Mufaqar Islam — Full Stack Web Developer Resume",
+    url: `${SITE_URL}/Resume.pdf`,
+    fileFormat: "application/pdf",
+    about: { "@id": `${SITE_URL}/#person` },
+    dateModified: "2026-10-25",
+  },
 ];
 
 export default function CV() {

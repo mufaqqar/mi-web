@@ -27,7 +27,23 @@ const faqs = [
   },
   {
     q: 'Where are you based and do you work remotely?',
-    a: 'I am based in Pakistan and work with clients worldwide. Projects run over email, phone and video calls, so location is never a blocker.',
+    a: 'I am based in Lahore, Pakistan and work with clients worldwide. Projects run over email, phone and video calls, so location is never a blocker.',
+  },
+  {
+    q: 'How much does a website cost?',
+    a: 'Every project is quoted after a short brief. WordPress sites, custom React or Next.js applications and maintenance plans are priced separately, and you get a fixed scope and price before work starts.',
+  },
+  {
+    q: 'How long does a project take?',
+    a: 'Timelines depend on scope. A small WordPress site is usually measured in weeks, while a custom React or Next.js application is measured in months. You get a delivery schedule with the quote.',
+  },
+  {
+    q: 'Can you improve an existing website without rebuilding it?',
+    a: 'Yes. I handle redesigns, migrations, Core Web Vitals and speed work, technical SEO, security fixes and new features on existing WordPress, React and Next.js codebases.',
+  },
+  {
+    q: 'Do you work with existing teams and agencies?',
+    a: 'Yes. I work directly with founders and marketing teams, and I also support agencies as an extra senior developer on WordPress, React and Next.js projects.',
   },
 ];
 
@@ -48,6 +64,33 @@ const reasons = [
     title: 'Plain-language communication',
     text: 'I answer quickly, explain technical trade-offs clearly and flag risks early so you can make fast decisions.',
   },
+];
+
+const processSteps = [
+  {
+    title: 'Discovery and scope',
+    text: 'We agree on goals, pages, integrations and success metrics. You get a written scope, timeline and fixed price before work starts.',
+  },
+  {
+    title: 'Design and build',
+    text: 'I design in the browser and build in weekly increments, so you review real progress instead of waiting for a big reveal.',
+  },
+  {
+    title: 'Test and launch',
+    text: 'Cross-browser and mobile testing, Core Web Vitals checks, technical SEO, analytics and a launch checklist.',
+  },
+  {
+    title: 'Maintain and improve',
+    text: 'After launch I handle updates, backups, security and new features on a monthly retainer or as needed.',
+  },
+];
+
+const stackGroups = [
+  { label: 'CMS & e-commerce', value: 'WordPress, WooCommerce, Shopify' },
+  { label: 'Front end', value: 'React, Next.js, Tailwind CSS, TypeScript' },
+  { label: 'Back end', value: 'PHP, Laravel, CodeIgniter, Node.js, MySQL' },
+  { label: 'Integrations', value: 'REST APIs, headless CMS, third-party services' },
+  { label: 'Hosting & DevOps', value: 'Vercel, managed WordPress hosting, CI/CD' },
 ];
 
 export default function home2() {
@@ -109,13 +152,59 @@ export default function home2() {
     }),
   ];
 
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    '@id': `${SITE_URL}/#process`,
+    name: 'How Mufaqar Islam delivers a web development project',
+    description:
+      'A four-step process for scoping, designing, building, launching and maintaining a WordPress, React or Next.js project.',
+    step: processSteps.map((step, index) => ({
+      '@type': 'HowToStep',
+      position: index + 1,
+      name: step.title,
+      text: step.text,
+      url: `${SITE_URL}/#process`,
+    })),
+  };
+
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${SITE_URL}/#webpage`,
+    url: `${SITE_URL}/`,
+    name: 'Mufaqar Islam — Full Stack Web Developer',
+    description:
+      'Full stack web developer with 15+ years building WordPress, React and Next.js websites and web applications for clients worldwide.',
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    about: { '@id': `${SITE_URL}/#person` },
+    primaryImageOfPage: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/images/new-banner.png`,
+      width: 942,
+      height: 975,
+    },
+    dateModified: '2026-10-25',
+    inLanguage: 'en-US',
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '#key-facts'],
+    },
+  };
+
   return (
     <>
       <PageHead
         title="Mufaqar Islam — WordPress, React & Next.js Developer"
         description="Full stack web developer with 15+ years building fast, secure WordPress, React and Next.js sites. See live work and get a fixed-scope quote."
         url="https://www.mufaqar.com"
-        schema={[faqSchema, reviewSchema, ...servicesSchema]}
+        schema={[
+          webPageSchema,
+          faqSchema,
+          howToSchema,
+          reviewSchema,
+          ...servicesSchema,
+        ]}
       />
       <main className="overflow-x-hidden">
         <section className="relative">
@@ -128,8 +217,10 @@ export default function home2() {
                 WordPress &middot; React &middot; Next.js &middot; PHP
               </p>
               <p className="md:text-2xl text-lg font-normal text-[#212121] mb-3">
-                I design, build, launch and maintain websites and web apps for
-                organizations that depend on them.
+                I&apos;m Mufaqar Islam, a WordPress, React and Next.js developer
+                based in Lahore, Pakistan. I design, build, launch and maintain
+                fast, secure websites and web apps for organizations that depend
+                on them.
               </p>
               <p className="md:text-xl text-base font-normal text-[#212121] mb-6">
                 Over 15 years of full-stack experience across front-end,
@@ -149,7 +240,10 @@ export default function home2() {
                   SEE LIVE PROJECTS
                 </Link>
               </div>
-              <dl className="grid grid-cols-2 gap-x-6 gap-y-3 text-sm font-normal text-[#212121] mb-8">
+              <dl
+                id="key-facts"
+                className="grid grid-cols-2 gap-x-6 gap-y-3 text-sm font-normal text-[#212121] mb-8"
+              >
                 <div>
                   <dt className="font-semibold">Experience</dt>
                   <dd>15+ years in production</dd>
@@ -377,6 +471,39 @@ export default function home2() {
           </div>
         </section>
 
+        <section
+          id="process"
+          className="bg-bs_secondary md:py-[12.5rem] py-20"
+        >
+          <div className="container mx-auto px-4">
+            <h2 className="md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-6 text-center">
+              How I Work
+            </h2>
+            <p className="md:text-2xl text-base text-title_color text-center mb-12 max-w-[720px] mx-auto">
+              Every project follows the same four steps. You always know what is
+              happening, what it costs and when it ships.
+            </p>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
+              {processSteps.map((step, index) => (
+                <div
+                  key={step.title}
+                  className="bg-white p-8 shadow-3xl h-full"
+                >
+                  <p className="text-sm font-semibold uppercase tracking-[0.15em] text-bs_btn_bg mb-2">
+                    Step {index + 1}
+                  </p>
+                  <h3 className="text-xl font-semibold text-title_color mb-3">
+                    {step.title}
+                  </h3>
+                  <p className="text-base font-normal text-title_color">
+                    {step.text}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="bg-title_color md:py-[12.5rem] py-20 relative">
           <div className="container mx-auto px-4">
             <h2 className="md:text-5xl text-2xl font-semibold text-white underline decoration-bs_link_color mb-6 text-center">
@@ -409,6 +536,126 @@ export default function home2() {
                 See all case studies
               </Link>
             </p>
+          </div>
+        </section>
+
+        <section className="bg-bs_info md:py-[12.5rem] py-20">
+          <div className="container max-w-[860px] mx-auto px-4">
+            <h2 className="md:text-5xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-6 text-center">
+              Stack &amp; Tools
+            </h2>
+            <p className="md:text-2xl text-base text-title_color text-center mb-12 max-w-[720px] mx-auto">
+              The technologies I use to build, launch and maintain WordPress,
+              React and Next.js projects.
+            </p>
+            <table className="w-full border-collapse text-left">
+              <caption className="sr-only">
+                Technologies used by Mufaqar Islam
+              </caption>
+              <thead>
+                <tr>
+                  <th
+                    scope="col"
+                    className="py-3 pr-6 text-sm font-semibold uppercase tracking-[0.15em] text-title_color border-b border-gray-300"
+                  >
+                    Layer
+                  </th>
+                  <th
+                    scope="col"
+                    className="py-3 text-sm font-semibold uppercase tracking-[0.15em] text-title_color border-b border-gray-300"
+                  >
+                    Technologies
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {stackGroups.map((row) => (
+                  <tr key={row.label}>
+                    <th
+                      scope="row"
+                      className="py-4 pr-6 align-top text-base font-semibold text-title_color border-b border-gray-200"
+                    >
+                      {row.label}
+                    </th>
+                    <td className="py-4 text-base font-normal text-title_color border-b border-gray-200">
+                      {row.value}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section className="bg-white md:py-[8rem] py-16">
+          <div className="container max-w-[960px] mx-auto px-4 flex md:flex-row flex-col gap-8 md:items-center">
+            <Image
+              src="/images/me.jpg"
+              alt="Portrait of Mufaqar Islam, full stack web developer in Lahore, Pakistan"
+              width={718}
+              height={982}
+              sizes="(max-width: 768px) 60vw, 220px"
+              className="w-[200px] md:w-[220px] h-auto"
+            />
+            <div>
+              <h2 className="md:text-4xl text-2xl font-semibold text-title_color underline decoration-bs_link_color mb-4">
+                About Mufaqar Islam
+              </h2>
+              <p className="text-base md:text-lg font-normal text-title_color mb-3">
+                Mufaqar Islam is a full stack web developer based in Lahore,
+                Pakistan. Over the last 15 years he has designed, built and
+                maintained WordPress, React and Next.js websites and
+                applications for clients in e-commerce, education and commercial
+                sectors.
+              </p>
+              <p className="text-base md:text-lg font-normal text-title_color mb-4">
+                He has delivered 880+ projects, works directly with every client
+                from scope to launch, and provides ongoing maintenance after
+                release.
+              </p>
+              <ul className="flex flex-wrap gap-6 text-base font-normal text-title_color mb-4">
+                <li>
+                  <Link
+                    href="/about"
+                    className="underline hover:decoration-bs_btn_bg transition-all duration-300"
+                  >
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/cv"
+                    className="underline hover:decoration-bs_btn_bg transition-all duration-300"
+                  >
+                    Resume
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://www.linkedin.com/in/mufaqar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:decoration-bs_btn_bg transition-all duration-300"
+                  >
+                    LinkedIn
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://github.com/mufaqar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:decoration-bs_btn_bg transition-all duration-300"
+                  >
+                    GitHub
+                  </Link>
+                </li>
+              </ul>
+              <p className="text-sm font-normal text-title_color">
+                Last updated:{' '}
+                <time dateTime="2026-10-25">October 25, 2026</time>
+              </p>
+            </div>
           </div>
         </section>
 

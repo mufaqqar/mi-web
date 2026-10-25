@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mufaqar Islam — Full Stack Web Developer</title>
+    <link>https://www.mufaqar.com/</link>
+    <description>WordPress, React and Next.js development, case studies and notes from Mufaqar Islam.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Oct 2026 00:00:00 +0500</lastBuildDate>
+    <atom:link href="https://www.mufaqar.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mufaqar Islam — Full Stack Web Developer</title>
+      <link>https://www.mufaqar.com/</link>
+      <guid>https://www.mufaqar.com/</guid>
+      <description>Full stack web developer with 15+ years building WordPress, React and Next.js websites and web applications for clients worldwide.</description>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0500</pubDate>
+    </item>
+    <item>
+      <title>Web Development Services — WordPress, React and Next.js</title>
+      <link>https://www.mufaqar.com/services</link>
+      <guid>https://www.mufaqar.com/services</guid>
+      <description>Custom WordPress, React and Next.js development, WooCommerce stores, SEO and maintenance plans.</description>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0500</pubDate>
+    </item>
+    <item>
+      <title>Portfolio — WordPress, React and Next.js projects</title>
+      <link>https://www.mufaqar.com/works</link>
+      <guid>https://www.mufaqar.com/works</guid>
+      <description>Live case studies covering POS platforms, e-commerce stores and education web apps.</description>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0500</pubDate>
+    </item>
+    <item>
+      <title>Anypos case study — Next.js POS platform</title>
+      <link>https://www.mufaqar.com/works/anypos</link>
+      <guid>https://www.mufaqar.com/works/anypos</guid>
+      <description>Commercial POS platform built with Next.js, Tailwind CSS and Vercel.</description>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0500</pubDate>
+    </item>
+    <item>
+      <title>Solution Founder case study — WordPress website</title>
+      <link>https://www.mufaqar.com/works/solutionfounder</link>
+      <guid>https://www.mufaqar.com/works/solutionfounder</guid>
+      <description>Commercial WordPress website and hosting project.</description>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0500</pubDate>
+    </item>
+    <item>
+      <title>Mams House case study — eCommerce store</title>
+      <link>https://www.mufaqar.com/works/mamshouse</link>
+      <guid>https://www.mufaqar.com/works/mamshouse</guid>
+      <description>eCommerce store project by Mufaqar Islam.</description>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0500</pubDate>
+    </item>
+    <item>
+      <title>Breeze Chrome Extension case study</title>
+      <link>https://www.mufaqar.com/works/breeze1.netlify.app</link>
+      <guid>https://www.mufaqar.com/works/breeze1.netlify.app</guid>
+      <description>eCommerce browser extension project by Mufaqar Islam.</description>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0500</pubDate>
+    </item>
+    <item>
+      <title>Smapy case study — education platform</title>
+      <link>https://www.mufaqar.com/works/smapy</link>
+      <guid>https://www.mufaqar.com/works/smapy</guid>
+      <description>Education platform project by Mufaqar Islam.</description>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0500</pubDate>
+    </item>
+    <item>
+      <title>Fund Gazer case study — education platform</title>
+      <link>https://www.mufaqar.com/works/fundgazer</link>
+      <guid>https://www.mufaqar.com/works/fundgazer</guid>
+      <description>Education platform project by Mufaqar Islam.</description>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0500</pubDate>
+    </item>
+  </channel>
+</rss>

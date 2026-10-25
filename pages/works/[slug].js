@@ -57,11 +57,20 @@ export default function Work({ work }) {
       headline: `${work.title} case study`,
       description,
       url: `${SITE_URL}/works/${work.slug}`,
-      image: `${SITE_URL}${work.feature}`,
+      image: {
+        "@type": "ImageObject",
+        contentUrl: `${SITE_URL}${work.feature}`,
+        caption: `${work.title} — ${work.category} project by Mufaqar Islam`,
+        width: 1920,
+        height: 768,
+      },
+      screenshot: `${SITE_URL}${work.feature}`,
       creator: { "@id": `${SITE_URL}/#person` },
       about: work.features.map((feature) => feature.name.replace(/,\s*$/, "")),
       genre: work.category,
       inLanguage: "en-US",
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      dateModified: "2026-10-25",
     },
   ];
 

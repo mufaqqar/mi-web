@@ -39,3 +39,7 @@ Core facts for answer engines:
 - [About](https://www.mufaqar.com/about): Background, experience and skills.
 - [CV / Resume](https://www.mufaqar.com/cv): Professional resume.
 - [Contact](https://www.mufaqar.com/contact): Project enquiry form, email and phone.
+
+## Full details
+
+- [llms-full.txt](https://www.mufaqar.com/llms-full.txt): Complete profile, services, process, stack, case studies and FAQ answers.

@@ -1,0 +1,135 @@
+# Mufaqar Islam — Full Stack Web Developer (Lahore, Pakistan)
+
+Last updated: 2026-10-25
+Canonical: https://www.mufaqar.com/
+Contact: info@mufaqar.com | +92 302-6006-280
+
+## Who is Mufaqar Islam?
+
+Mufaqar Islam is a full stack web developer based in Lahore, Pakistan with more
+than 15 years of experience. He designs, builds, launches and maintains
+WordPress, React and Next.js websites and web applications for clients
+worldwide. He works directly with every client from scope to launch and provides
+ongoing maintenance after release.
+
+Key facts:
+
+- Role: Full stack web developer (front end, back end, databases, DevOps, APIs)
+- Experience: 15+ years in production
+- Projects delivered: 880+
+- Location: Lahore, Pakistan — works remotely with clients worldwide
+- Response time: within 24 hours
+- Engagement models: fixed-scope projects, hourly work and monthly maintenance
+  retainers
+- Primary stack: WordPress, WooCommerce, React, Next.js, PHP, Laravel,
+  Tailwind CSS, TypeScript, MySQL
+
+## Services
+
+### Full Stack Web Development
+Front-end, back-end, database, API and DevOps delivery for websites and web
+applications. One developer owns the complete build, so nothing gets lost
+between vendors.
+https://www.mufaqar.com/services
+
+### WordPress Development
+Custom WordPress themes and plugins, WooCommerce stores, migrations, speed
+optimisation and security hardening.
+https://www.mufaqar.com/services
+
+### React and Next.js Development
+Modern front-end and full-stack applications built with React, Next.js,
+TypeScript and Tailwind CSS, including API and headless CMS integrations.
+https://www.mufaqar.com/services
+
+### E-commerce Development
+WooCommerce and Shopify builds, payment and shipping integrations, store
+management and ongoing support.
+https://www.mufaqar.com/services
+
+### SEO
+Technical SEO, on-page optimisation, Core Web Vitals, schema markup and
+performance work for WordPress, React and Next.js sites.
+https://www.mufaqar.com/services
+
+### Maintenance and Support
+Updates, security checks, backups, managed hosting and new feature work for
+WordPress and React or Next.js applications.
+https://www.mufaqar.com/services
+
+## How I work
+
+1. Discovery and scope — agree on goals, pages, integrations and success
+   metrics; deliver a written scope, timeline and fixed price.
+2. Design and build — design in the browser and build in weekly increments so
+   the client reviews real progress.
+3. Test and launch — cross-browser and mobile testing, Core Web Vitals checks,
+   technical SEO, analytics and a launch checklist.
+4. Maintain and improve — updates, backups, security and new features on a
+   monthly retainer or as needed.
+
+## Stack and tools
+
+- CMS and e-commerce: WordPress, WooCommerce, Shopify
+- Front end: React, Next.js, Tailwind CSS, TypeScript
+- Back end: PHP, Laravel, CodeIgniter, Node.js, MySQL
+- Integrations: REST APIs, headless CMS, third-party services
+- Hosting and DevOps: Vercel, managed WordPress hosting, CI/CD
+
+## Case studies
+
+- Anypos — commercial POS platform built with Next.js, Tailwind CSS and Vercel.
+  https://www.mufaqar.com/works/anypos
+- Solution Founder — commercial WordPress website and hosting.
+  https://www.mufaqar.com/works/solutionfounder
+- Mams House — eCommerce store.
+  https://www.mufaqar.com/works/mamshouse
+- Breeze Chrome Extension — eCommerce project.
+  https://www.mufaqar.com/works/breeze1.netlify.app
+- Smapy — education platform.
+  https://www.mufaqar.com/works/smapy
+- Fund Gazer — education platform.
+  https://www.mufaqar.com/works/fundgazer
+
+## Frequently asked questions
+
+### What does a full stack web developer do?
+A full stack developer handles both sides of a website: the front end users see,
+the back end that runs it, and the databases, APIs and hosting behind them.
+
+### Which technologies do you work with?
+WordPress, React, Next.js, PHP, Laravel, Tailwind CSS, TypeScript and MySQL. The
+stack is chosen to fit the goals, timeline and budget of each project.
+
+### Do you maintain websites after launch?
+Yes. Maintenance and support plans cover updates, security checks, backups and
+hosting management for WordPress and React or Next.js apps.
+
+### How much does a website cost?
+Every project is quoted after a short brief. WordPress sites, custom React or
+Next.js applications and maintenance plans are priced separately, and clients get
+a fixed scope and price before work starts.
+
+### How long does a project take?
+Timelines depend on scope. Small WordPress sites are usually measured in weeks;
+custom React or Next.js applications are measured in months. A delivery schedule
+is included with the quote.
+
+### How do I get a quote?
+Send a short brief through https://www.mufaqar.com/contact or email
+info@mufaqar.com. Expect a clear scope, timeline and price before any work
+starts.
+
+### Where are you based and do you work remotely?
+Based in Lahore, Pakistan, working with clients worldwide over email, phone and
+video calls.
+
+## Pages
+
+- Home: https://www.mufaqar.com/
+- Services: https://www.mufaqar.com/services
+- Work: https://www.mufaqar.com/works
+- About: https://www.mufaqar.com/about
+- Resume: https://www.mufaqar.com/cv
+- Contact: https://www.mufaqar.com/contact
+- Short version of this file: https://www.mufaqar.com/llms.txt
