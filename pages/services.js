@@ -67,27 +67,27 @@ const stackComparison = [
   {
     need: 'Marketing site, blog or brochure site',
     stack: 'WordPress',
-    timeline: '2–6 weeks',
+    timeline: '1-2 weeks',
   },
   {
     need: 'Custom app, dashboard or authenticated portal',
     stack: 'React + Next.js',
-    timeline: '6–16 weeks',
+    timeline: '1–3 weeks',
   },
   {
     need: 'Small or mid-size online store',
     stack: 'WooCommerce',
-    timeline: '4–8 weeks',
+    timeline: '1–3 weeks',
   },
   {
     need: 'Large catalogue or multi-channel retail',
     stack: 'Shopify',
-    timeline: '4–10 weeks',
+    timeline: '1–2 weeks',
   },
   {
     need: 'Legacy PHP application modernisation',
     stack: 'Laravel + React',
-    timeline: '8–20 weeks',
+    timeline: '1–4 weeks',
   },
 ]
 
